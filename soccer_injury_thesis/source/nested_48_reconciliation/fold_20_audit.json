@@ -1,0 +1,23 @@
+{
+  "fold": 20,
+  "original_inner_candidate_count": 48,
+  "candidate_count": 48,
+  "source_selection_file": "/Users/zhanghongtu/pmsys/md-mohaiminul-islam-emon/outputs/injury_history_lopo_v1/nested_joint_selection/outer_fold_20_selection.json",
+  "source_sha256": "a4c3c717c1e69ac8777a3304e0f138337558ebb72a45daefadacced1fd6a0ba4",
+  "selected": {
+    "id": 18,
+    "window": 8,
+    "model": "SVM-RBF",
+    "strategy": "control",
+    "params": {
+      "C": 1.0,
+      "gamma": "scale"
+    }
+  },
+  "inner_check_max_AP_difference": 0.0,
+  "inner_check_max_AUC_difference": 0.0,
+  "changed_selection": false,
+  "warnings": [
+    "The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`"
+  ]
+}

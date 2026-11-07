@@ -1,0 +1,249 @@
+{
+  "config": "8d_LightGBM_control",
+  "fold": 18,
+  "test_player": "TeamA-affd6f1d-b364-4700-98bf-8f20896e5ac4",
+  "selected": {
+    "id": 4,
+    "strategy": "control",
+    "params": {
+      "subsample": 1.0,
+      "reg_lambda": 10.0,
+      "reg_alpha": 0.0,
+      "num_leaves": 15,
+      "n_estimators": 120,
+      "min_child_samples": 40,
+      "max_depth": 3,
+      "learning_rate": 0.02,
+      "colsample_bytree": 1.0
+    }
+  },
+  "inner_search": [
+    {
+      "candidate_id": 0,
+      "mean_inner_AP": 0.04251156798500188,
+      "inner_fold_AP": [
+        0.028739962937462452,
+        0.012852935119035562,
+        0.08594180589850761
+      ],
+      "warnings": [
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names",
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names",
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+      ]
+    },
+    {
+      "candidate_id": 1,
+      "mean_inner_AP": 0.03436553835894608,
+      "inner_fold_AP": [
+        0.031496319223716956,
+        0.006038181760415066,
+        0.06556211409270622
+      ],
+      "warnings": [
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names",
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names",
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+      ]
+    },
+    {
+      "candidate_id": 2,
+      "mean_inner_AP": 0.031848885491755026,
+      "inner_fold_AP": [
+        0.03388030163645919,
+        0.013917645665284315,
+        0.047748709173521586
+      ],
+      "warnings": [
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names",
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names",
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+      ]
+    },
+    {
+      "candidate_id": 3,
+      "mean_inner_AP": 0.03231881308199596,
+      "inner_fold_AP": [
+        0.03114676060007862,
+        0.008612871694471964,
+        0.057196806951437286
+      ],
+      "warnings": [
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names",
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names",
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+      ]
+    },
+    {
+      "candidate_id": 4,
+      "mean_inner_AP": 0.0535157973785948,
+      "inner_fold_AP": [
+        0.04308001190530381,
+        0.010286323945793993,
+        0.10718105628468658
+      ],
+      "warnings": [
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names",
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names",
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+      ]
+    },
+    {
+      "candidate_id": 5,
+      "mean_inner_AP": 0.028714056093486373,
+      "inner_fold_AP": [
+        0.02407717287586563,
+        0.009224902781183023,
+        0.05284009262341047
+      ],
+      "warnings": [
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names",
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names",
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+      ]
+    },
+    {
+      "candidate_id": 6,
+      "mean_inner_AP": 0.03549791604283206,
+      "inner_fold_AP": [
+        0.033148285181741975,
+        0.012043014559235949,
+        0.06130244838751826
+      ],
+      "warnings": [
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names",
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names",
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+      ]
+    },
+    {
+      "candidate_id": 7,
+      "mean_inner_AP": 0.03703097282410697,
+      "inner_fold_AP": [
+        0.027475500944790055,
+        0.014122282687937634,
+        0.06949513483959323
+      ],
+      "warnings": [
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names",
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names",
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+      ]
+    },
+    {
+      "candidate_id": 8,
+      "mean_inner_AP": 0.03813600234375483,
+      "inner_fold_AP": [
+        0.02580717371580359,
+        0.009670053729116309,
+        0.0789307795863446
+      ],
+      "warnings": [
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names",
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names",
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+      ]
+    },
+    {
+      "candidate_id": 9,
+      "mean_inner_AP": 0.04872885159358545,
+      "inner_fold_AP": [
+        0.041235053771081366,
+        0.013262949887381893,
+        0.09168855112229309
+      ],
+      "warnings": [
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names",
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names",
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+      ]
+    },
+    {
+      "candidate_id": 10,
+      "mean_inner_AP": 0.03632325831260536,
+      "inner_fold_AP": [
+        0.03312574788220804,
+        0.01910451511525572,
+        0.05673951194035234
+      ],
+      "warnings": [
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names",
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names",
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+      ]
+    },
+    {
+      "candidate_id": 11,
+      "mean_inner_AP": 0.03555222115451939,
+      "inner_fold_AP": [
+        0.027071192376953112,
+        0.013024853354323742,
+        0.06656061773228132
+      ],
+      "warnings": [
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names",
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names",
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+      ]
+    },
+    {
+      "candidate_id": 12,
+      "mean_inner_AP": 0.049631726707360185,
+      "inner_fold_AP": [
+        0.044115991440871555,
+        0.012088059310844952,
+        0.09269112937036404
+      ],
+      "warnings": [
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names",
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names",
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+      ]
+    },
+    {
+      "candidate_id": 13,
+      "mean_inner_AP": 0.03127919395313769,
+      "inner_fold_AP": [
+        0.02859140010322423,
+        0.008407187579904255,
+        0.056838994176284595
+      ],
+      "warnings": [
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names",
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names",
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+      ]
+    },
+    {
+      "candidate_id": 14,
+      "mean_inner_AP": 0.03944007980698402,
+      "inner_fold_AP": [
+        0.03487295551815373,
+        0.018663803908604195,
+        0.06478347999419413
+      ],
+      "warnings": [
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names",
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names",
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+      ]
+    },
+    {
+      "candidate_id": 15,
+      "mean_inner_AP": 0.05187209858092032,
+      "inner_fold_AP": [
+        0.03850976677412131,
+        0.011322776486859703,
+        0.10578375248177993
+      ],
+      "warnings": [
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names",
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names",
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+      ]
+    }
+  ],
+  "outer_warnings": [
+    "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+  ]
+}

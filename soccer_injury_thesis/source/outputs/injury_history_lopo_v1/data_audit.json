@@ -1,0 +1,40 @@
+{
+  "source": "/Users/zhanghongtu/pmsys/md-mohaiminul-islam-emon/verified_outputs/01_source_preprocessing_v1/source_athlete_day_preprocessed.parquet",
+  "source_sha256": "7cd352920c16ab2446b50e29418f2f6cf02319dcfc64791c9e9110b2c973bfe9",
+  "target": "original injury_report_t renamed injury; no label shift",
+  "input_interval": "[date-window, date-1] calendar days",
+  "inclusion": "existing merged panel row, at least one observed input in preceding 32 calendar days; common cohort for all windows",
+  "missing_label_meaning": "no submitted notification in source report-day lookup, not confirmed clinical health",
+  "source_rows": 19689,
+  "source_positives": 156,
+  "included_rows": 19613,
+  "included_positives": 149,
+  "players": 50,
+  "excluded_rows": 76,
+  "excluded_positives": 7,
+  "fields": [
+    "session_rpe_mean",
+    "session_srpe_sum_au",
+    "session_duration_sum_min",
+    "fatigue_burden",
+    "poor_sleep_burden",
+    "soreness_burden",
+    "stress_burden",
+    "sleep_duration_raw",
+    "total_distance_m",
+    "distance_above_15p0_km_h_m",
+    "gps_max_speed_m_s",
+    "mood_raw",
+    "readiness_raw",
+    "daily_load_au"
+  ],
+  "windows": [
+    2,
+    4,
+    8,
+    16,
+    21,
+    32
+  ],
+  "imbalance": "unresampled control and training-only random oversampling to minority/majority=0.1; not probability calibrated"
+}

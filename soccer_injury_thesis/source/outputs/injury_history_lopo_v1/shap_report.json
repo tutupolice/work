@@ -1,0 +1,131 @@
+{
+  "model": "LightGBM",
+  "window_days": 8,
+  "rows_explained": 2500,
+  "features": 75,
+  "interpretation": "SHAP values quantify model-prediction contribution, not causation or injury mechanism.",
+  "sample_sha256": "ad287f5d77a1ba7cfaf213688183f1df7a38ea583d99c52bed57d6a01434ff5e",
+  "model_sha256": "4e50edcc7415253ae302bdf0e1ce649a23a6e29da628427e6c1864d2f4c67cc3",
+  "top_features": [
+    {
+      "feature": "readiness_raw__mean",
+      "mean_abs_shap": 0.5438860618466614,
+      "mean_shap": 0.01156463719163215,
+      "rank": 1
+    },
+    {
+      "feature": "gps_max_speed_m_s__std",
+      "mean_abs_shap": 0.246586484128631,
+      "mean_shap": 0.008457619520156844,
+      "rank": 2
+    },
+    {
+      "feature": "poor_sleep_burden__mean",
+      "mean_abs_shap": 0.23023728847204106,
+      "mean_shap": 0.014206070155923189,
+      "rank": 3
+    },
+    {
+      "feature": "sleep_duration_raw__std",
+      "mean_abs_shap": 0.22784736516356452,
+      "mean_shap": -0.003102582997405548,
+      "rank": 4
+    },
+    {
+      "feature": "has_gps_record__rate",
+      "mean_abs_shap": 0.15630488342907933,
+      "mean_shap": -0.005730076706675045,
+      "rank": 5
+    },
+    {
+      "feature": "stress_burden__std",
+      "mean_abs_shap": 0.14966076609646442,
+      "mean_shap": -0.004191443589189137,
+      "rank": 6
+    },
+    {
+      "feature": "total_distance_m__max",
+      "mean_abs_shap": 0.14564461725582772,
+      "mean_shap": -0.0077166791193928755,
+      "rank": 7
+    },
+    {
+      "feature": "readiness_raw__previous_day",
+      "mean_abs_shap": 0.12845968980872285,
+      "mean_shap": -0.0008520150677127598,
+      "rank": 8
+    },
+    {
+      "feature": "total_distance_m__std",
+      "mean_abs_shap": 0.1229339588061017,
+      "mean_shap": -0.01652631562951025,
+      "rank": 9
+    },
+    {
+      "feature": "session_duration_sum_min__mean",
+      "mean_abs_shap": 0.10104150051269398,
+      "mean_shap": -0.000730857735348865,
+      "rank": 10
+    },
+    {
+      "feature": "stress_burden__mean",
+      "mean_abs_shap": 0.09285323111325193,
+      "mean_shap": 0.0087051258202622,
+      "rank": 11
+    },
+    {
+      "feature": "sleep_duration_raw__max",
+      "mean_abs_shap": 0.08760438794183083,
+      "mean_shap": 0.0019145391558816997,
+      "rank": 12
+    },
+    {
+      "feature": "poor_sleep_burden__std",
+      "mean_abs_shap": 0.08739412365178797,
+      "mean_shap": 0.0015928524404748596,
+      "rank": 13
+    },
+    {
+      "feature": "session_rpe_mean__max",
+      "mean_abs_shap": 0.07881399315795479,
+      "mean_shap": -0.0017874965599763975,
+      "rank": 14
+    },
+    {
+      "feature": "total_distance_m__mean",
+      "mean_abs_shap": 0.07689573490229382,
+      "mean_shap": -0.0072064054069635435,
+      "rank": 15
+    },
+    {
+      "feature": "gps_max_speed_m_s__max",
+      "mean_abs_shap": 0.07497444146335139,
+      "mean_shap": 0.00792980819066422,
+      "rank": 16
+    },
+    {
+      "feature": "sleep_duration_raw__mean",
+      "mean_abs_shap": 0.0736632467939254,
+      "mean_shap": 0.002651764592034407,
+      "rank": 17
+    },
+    {
+      "feature": "soreness_burden__mean",
+      "mean_abs_shap": 0.0600257952409097,
+      "mean_shap": 0.0030559679302611057,
+      "rank": 18
+    },
+    {
+      "feature": "session_srpe_sum_au__std",
+      "mean_abs_shap": 0.05737689207138262,
+      "mean_shap": 0.0004104076493999625,
+      "rank": 19
+    },
+    {
+      "feature": "total_distance_m__coverage",
+      "mean_abs_shap": 0.055972461189870884,
+      "mean_shap": -0.005384824358320458,
+      "rank": 20
+    }
+  ]
+}

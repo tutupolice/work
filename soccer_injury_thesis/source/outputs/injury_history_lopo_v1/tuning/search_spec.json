@@ -1,0 +1,250 @@
+{
+  "window": 8,
+  "name": "LightGBM",
+  "incumbent": "8d_LightGBM_control",
+  "candidates": [
+    {
+      "id": 0,
+      "strategy": "control",
+      "params": {
+        "n_estimators": 180,
+        "max_depth": 3,
+        "num_leaves": 7,
+        "learning_rate": 0.04,
+        "min_child_samples": 40,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "reg_alpha": 0.0,
+        "reg_lambda": 1.0
+      }
+    },
+    {
+      "id": 1,
+      "strategy": "ros01",
+      "params": {
+        "n_estimators": 180,
+        "max_depth": 3,
+        "num_leaves": 7,
+        "learning_rate": 0.04,
+        "min_child_samples": 40,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "reg_alpha": 0.0,
+        "reg_lambda": 1.0
+      }
+    },
+    {
+      "id": 2,
+      "strategy": "smote01",
+      "params": {
+        "n_estimators": 180,
+        "max_depth": 3,
+        "num_leaves": 7,
+        "learning_rate": 0.04,
+        "min_child_samples": 40,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "reg_alpha": 0.0,
+        "reg_lambda": 1.0
+      }
+    },
+    {
+      "id": 3,
+      "strategy": "weighted",
+      "params": {
+        "n_estimators": 180,
+        "max_depth": 3,
+        "num_leaves": 7,
+        "learning_rate": 0.04,
+        "min_child_samples": 40,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "reg_alpha": 0.0,
+        "reg_lambda": 1.0
+      }
+    },
+    {
+      "id": 4,
+      "strategy": "control",
+      "params": {
+        "subsample": 1.0,
+        "reg_lambda": 10.0,
+        "reg_alpha": 0.0,
+        "num_leaves": 15,
+        "n_estimators": 120,
+        "min_child_samples": 40,
+        "max_depth": 3,
+        "learning_rate": 0.02,
+        "colsample_bytree": 1.0
+      }
+    },
+    {
+      "id": 5,
+      "strategy": "ros01",
+      "params": {
+        "subsample": 1.0,
+        "reg_lambda": 10.0,
+        "reg_alpha": 0.1,
+        "num_leaves": 15,
+        "n_estimators": 120,
+        "min_child_samples": 80,
+        "max_depth": 4,
+        "learning_rate": 0.08,
+        "colsample_bytree": 1.0
+      }
+    },
+    {
+      "id": 6,
+      "strategy": "smote01",
+      "params": {
+        "subsample": 0.8,
+        "reg_lambda": 5.0,
+        "reg_alpha": 0.1,
+        "num_leaves": 7,
+        "n_estimators": 260,
+        "min_child_samples": 80,
+        "max_depth": 4,
+        "learning_rate": 0.02,
+        "colsample_bytree": 0.7
+      }
+    },
+    {
+      "id": 7,
+      "strategy": "weighted",
+      "params": {
+        "subsample": 1.0,
+        "reg_lambda": 1.0,
+        "reg_alpha": 0.1,
+        "num_leaves": 3,
+        "n_estimators": 260,
+        "min_child_samples": 20,
+        "max_depth": 4,
+        "learning_rate": 0.04,
+        "colsample_bytree": 0.8
+      }
+    },
+    {
+      "id": 8,
+      "strategy": "control",
+      "params": {
+        "subsample": 0.8,
+        "reg_lambda": 1.0,
+        "reg_alpha": 0.1,
+        "num_leaves": 7,
+        "n_estimators": 180,
+        "min_child_samples": 20,
+        "max_depth": 3,
+        "learning_rate": 0.08,
+        "colsample_bytree": 1.0
+      }
+    },
+    {
+      "id": 9,
+      "strategy": "ros01",
+      "params": {
+        "subsample": 1.0,
+        "reg_lambda": 1.0,
+        "reg_alpha": 0.0,
+        "num_leaves": 3,
+        "n_estimators": 260,
+        "min_child_samples": 40,
+        "max_depth": 2,
+        "learning_rate": 0.02,
+        "colsample_bytree": 0.8
+      }
+    },
+    {
+      "id": 10,
+      "strategy": "smote01",
+      "params": {
+        "subsample": 1.0,
+        "reg_lambda": 1.0,
+        "reg_alpha": 0.1,
+        "num_leaves": 7,
+        "n_estimators": 260,
+        "min_child_samples": 20,
+        "max_depth": 2,
+        "learning_rate": 0.02,
+        "colsample_bytree": 1.0
+      }
+    },
+    {
+      "id": 11,
+      "strategy": "weighted",
+      "params": {
+        "subsample": 0.8,
+        "reg_lambda": 5.0,
+        "reg_alpha": 0.0,
+        "num_leaves": 3,
+        "n_estimators": 260,
+        "min_child_samples": 20,
+        "max_depth": 2,
+        "learning_rate": 0.04,
+        "colsample_bytree": 0.8
+      }
+    },
+    {
+      "id": 12,
+      "strategy": "control",
+      "params": {
+        "subsample": 0.8,
+        "reg_lambda": 10.0,
+        "reg_alpha": 0.0,
+        "num_leaves": 15,
+        "n_estimators": 180,
+        "min_child_samples": 20,
+        "max_depth": 4,
+        "learning_rate": 0.02,
+        "colsample_bytree": 0.7
+      }
+    },
+    {
+      "id": 13,
+      "strategy": "ros01",
+      "params": {
+        "subsample": 1.0,
+        "reg_lambda": 5.0,
+        "reg_alpha": 0.1,
+        "num_leaves": 15,
+        "n_estimators": 180,
+        "min_child_samples": 40,
+        "max_depth": 4,
+        "learning_rate": 0.04,
+        "colsample_bytree": 0.7
+      }
+    },
+    {
+      "id": 14,
+      "strategy": "smote01",
+      "params": {
+        "subsample": 0.8,
+        "reg_lambda": 1.0,
+        "reg_alpha": 1.0,
+        "num_leaves": 3,
+        "n_estimators": 260,
+        "min_child_samples": 80,
+        "max_depth": 4,
+        "learning_rate": 0.02,
+        "colsample_bytree": 0.7
+      }
+    },
+    {
+      "id": 15,
+      "strategy": "weighted",
+      "params": {
+        "subsample": 1.0,
+        "reg_lambda": 1.0,
+        "reg_alpha": 0.0,
+        "num_leaves": 15,
+        "n_estimators": 120,
+        "min_child_samples": 20,
+        "max_depth": 2,
+        "learning_rate": 0.02,
+        "colsample_bytree": 1.0
+      }
+    }
+  ],
+  "inner_validation": "3 athlete-disjoint folds stratified by athlete positive presence",
+  "criterion": "mean of 3 inner-fold AP values",
+  "limitation": "model family and window preselected from outer benchmark; selection optimism remains"
+}

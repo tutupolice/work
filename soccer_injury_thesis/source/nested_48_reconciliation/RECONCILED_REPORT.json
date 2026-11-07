@@ -1,0 +1,48 @@
+{
+  "method": "48 control configurations; cached complete inner results filtered to prespecified control rule; all 50 selected inner evaluations reproduced and all 50 outer models refitted",
+  "n": 19613,
+  "positive": 149,
+  "AP": 0.01287661082680533,
+  "ROC_AUC": 0.5734241428677828,
+  "bootstrap": {
+    "valid_replicates": 2000,
+    "AP_95CI": [
+      0.004919558613018695,
+      0.024499286585119098
+    ],
+    "ROC_AUC_95CI": [
+      0.50233514953317,
+      0.6591080806059466
+    ],
+    "note": "athlete-cluster bootstrap of nested outer predictions; selection is not rerun"
+  },
+  "original_candidate_counts": {
+    "96": 21,
+    "48": 29
+  },
+  "changed_selection_folds": [
+    0,
+    23,
+    25
+  ],
+  "selected_counts": {
+    "16d_RandomForest_control": 10,
+    "21d_RandomForest_control": 11,
+    "32d_RandomForest_control": 11,
+    "8d_XGBoost_control": 4,
+    "8d_LightGBM_control": 1,
+    "32d_XGBoost_control": 1,
+    "16d_CatBoost_control": 4,
+    "8d_SVM-RBF_control": 1,
+    "21d_CatBoost_control": 7
+  },
+  "script_sha256": "625927369d5bf91e2317d145ecaef45ca9604b20846d8f9329f9c06eaf3f13bc",
+  "input_hashes": {
+    "2": "ba496cb83317cd6cd224459ba768759588060289eb79ea6c92e3068d03606c03",
+    "4": "d030a98f6a0f1d4144fc9b253565d7a0d9c5de56c77292d496c16c1b4bfe7ee9",
+    "8": "66c5138f6db44b9b4ce714e24c580db8068935310d715df8484c810efcc06fd8",
+    "16": "8e388e66346f424e214d2f06a0afbb2d4b57bf178fe7a535f713c7ea4323b6bc",
+    "21": "eeca1a9a3f04f4613fd62462688c1886a66358bbcfc5bbf47d897aaa786c3895",
+    "32": "3a582d76dd4319f3cfa86ca77f2df127281ecdd1fdf07212246f03d046a1c1c2"
+  }
+}

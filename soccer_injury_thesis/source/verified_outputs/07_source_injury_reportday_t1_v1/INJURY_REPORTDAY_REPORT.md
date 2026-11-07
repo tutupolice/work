@@ -1,0 +1,63 @@
+# SoccerMon injury report-day audit
+
+本阶段只执行完全重复行清理和player × date日级injury_report构建。未执行跨日期合并或任何episode相关处理。
+
+## Raw audit
+
+```text
+                       metric      value
+                     raw_rows        162
+exact_duplicate_rows_involved         11
+     exact_duplicates_removed          6
+               clean_raw_rows        156
+    unique_player_report_days        156
+         players_with_reports         15
+                     date_min 2020-01-14
+                     date_max 2021-11-03
+        body_location_entries        299
+        unique_body_locations         11
+       minor_location_entries        224
+       major_location_entries         75
+       other_severity_entries          0
+   multi_location_report_days         67
+```
+
+## Reports per player
+
+```text
+                               player_name  injury_report_days first_report_date last_report_date  location_entries  minor_location_entries  major_location_entries  multi_location_report_days
+TeamA-4051bba7-1170-4c43-b912-8c38815a7625                  46        2020-03-21       2020-11-08               165                      98                      67                          46
+TeamA-5cd7a61b-88b2-46d2-94f8-5a0d4f682d93                  45        2020-03-20       2021-09-16                45                      45                       0                           0
+TeamA-3e5f6e2b-46b7-4890-84a9-3bbb2649af5a                  27        2020-03-21       2021-11-03                28                      28                       0                           1
+TeamA-bcc03f81-2733-45d3-abf1-f7a709c63e68                   8        2020-03-20       2020-04-15                18                      12                       6                           8
+TeamA-c4ccf1a6-48c3-4a17-8d6c-eedd12e8680e                   8        2020-05-18       2021-01-27                11                      10                       1                           3
+TeamA-74afe68c-f348-414c-9754-6d6f9df12587                   4        2020-03-22       2021-09-16                 4                       3                       1                           0
+TeamB-4405bb1f-56f7-48ba-bfa8-e795e4006952                   4        2020-01-26       2020-02-07                 7                       7                       0                           3
+TeamA-560cb066-a8ae-412f-b09f-0d2a6aa0cf05                   3        2020-04-29       2020-10-16                 4                       4                       0                           1
+TeamA-5a5b135d-d146-4b4c-b3da-efcd4d203f95                   3        2020-06-26       2020-08-08                 6                       6                       0                           3
+TeamB-e4321aef-964a-4fdd-88bd-0bd548b0e93b                   3        2020-01-14       2020-01-23                 3                       3                       0                           0
+TeamA-82a0cc6a-a398-4c89-b5fb-34bc4b53dbea                   1        2020-09-05       2020-09-05                 3                       3                       0                           1
+TeamA-affd6f1d-b364-4700-98bf-8f20896e5ac4                   1        2020-03-20       2020-03-20                 1                       1                       0                           0
+TeamA-b58af410-da77-479e-b93c-e03617b9f36d                   1        2020-03-20       2020-03-20                 1                       1                       0                           0
+TeamB-7ab47f4e-6eca-4793-880f-6a0dad3459c3                   1        2021-10-05       2021-10-05                 2                       2                       0                           1
+TeamB-afc13e53-2c77-48cb-8a78-743663bbb84f                   1        2020-01-26       2020-01-26                 1                       1                       0                           0
+```
+
+## Location and severity distribution
+
+```text
+body_location  location_entries  players_with_location  minor_entries  major_entries  player_report_days
+   right_knee                65                      4             25             40                  65
+    left_knee                49                      3             20             29                  49
+   right_foot                48                      6             48              0                  48
+  right_thigh                30                      6             29              1                  30
+    right_leg                29                      4             29              0                  29
+     left_leg                26                      2             26              0                  26
+   left_thigh                24                      8             24              0                  24
+    groin_hip                10                      3              9              1                  10
+ stomach_back                 9                      2              8              1                   9
+    left_foot                 7                      4              4              3                   7
+    head_neck                 2                      2              2              0                   2
+```
+
+`04_injury_report_day.csv`仅包含player_name、date和injury_report；location与severity仅保留在描述性审计文件中。

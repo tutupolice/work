@@ -1,0 +1,11 @@
+{
+  "benchmark_sha256": "0e01017ce3340dc6dbb636d0d3c4cc3de072bcebc11bec31924f7ecb35a2ed16",
+  "top3": [
+    "8d_LightGBM_control",
+    "32d_XGBoost_control",
+    "21d_LightGBM_ros01"
+  ],
+  "outer_folds": 150,
+  "rows_per_configuration": 19613,
+  "positives_per_configuration": 149
+}

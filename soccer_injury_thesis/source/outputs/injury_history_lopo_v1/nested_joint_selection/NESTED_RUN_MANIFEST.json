@@ -1,0 +1,27 @@
+{
+  "completed_utc": "2026-10-07T11:11:08.244366+00:00",
+  "script": "/Users/zhanghongtu/pmsys/md-mohaiminul-islam-emon/03r_injury_nested_joint_selection.py",
+  "script_sha256": "65ecce07b353b2450cd30cc201e16f45ddd34c58695e22acaf4edcc5ce6181b6",
+  "source_output": "/Users/zhanghongtu/pmsys/md-mohaiminul-islam-emon/outputs/injury_history_lopo_v1",
+  "input_history_sha256": {
+    "2": "ba496cb83317cd6cd224459ba768759588060289eb79ea6c92e3068d03606c03",
+    "4": "d030a98f6a0f1d4144fc9b253565d7a0d9c5de56c77292d496c16c1b4bfe7ee9",
+    "8": "66c5138f6db44b9b4ce714e24c580db8068935310d715df8484c810efcc06fd8",
+    "16": "8e388e66346f424e214d2f06a0afbb2d4b57bf178fe7a535f713c7ea4323b6bc",
+    "21": "eeca1a9a3f04f4613fd62462688c1886a66358bbcfc5bbf47d897aaa786c3895",
+    "32": "3a582d76dd4319f3cfa86ca77f2df127281ecdd1fdf07212246f03d046a1c1c2"
+  },
+  "outer_folds": 50,
+  "inner_folds": 3,
+  "candidate_count": 48,
+  "candidate_rule": "8 models x 6 windows x natural-prevalence control; fixed baseline parameters",
+  "selection_metric": "mean inner AP, ROC-AUC tie-breaker",
+  "target": "injury_report_t copied to injury; no label shift",
+  "prediction_history": "calendar interval [date-window, date-1]",
+  "literature_basis": [
+    "TRIPOD+AI 2024",
+    "PROBAST+AI 2025",
+    "Cawley and Talbot 2010",
+    "Saito and Rehmsmeier 2015"
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.4.0",
+  "lock_status": "PASSED",
+  "created_utc": "2026-08-03T18:23:45.520103+00:00",
+  "script": "/Users/zhanghongtu/pmsys/md-mohaiminul-islam-emon/verified_04a_source_gps_daily.py",
+  "script_sha256": "df14c42faf2b3ad0c9a1447bcb323b26264d1821880f93f46ac94e6fcbb9bccd",
+  "input_inventory_sha256": "c7e3ab4dceddbb8c544bf62fc2ecebe0fae9419b3763ca97731a33654fb3c5d9",
+  "parameters": {
+    "speed_qc_m_s": [
+      0.0,
+      10.0
+    ],
+    "saturated_speed_artifact_m_s": 11.5,
+    "saturation_plateau_exclusion_s": 1.0,
+    "robust_spatial_quantiles": [
+      0.01,
+      0.99
+    ],
+    "maximum_robust_spatial_extent_warning_m": 1000.0,
+    "spatial_extent_policy": "quality warning only; not an automatic speed-load exclusion",
+    "hir_thresholds_km_h": [
+      12.5,
+      15.0,
+      15.984000000000002,
+      19.98
+    ],
+    "primary_hir_threshold_km_h": 15.984000000000002,
+    "primary_hir_threshold_m_s": 4.44,
+    "gap_rule": "dt <= max(1 second, 2 x session median positive dt)",
+    "timestamp_collapse": "median speed and heart rate",
+    "distance_integration": "linear/trapezoidal"
+  },
+  "summary": {
+    "discovered_file_count": 9994,
+    "discovered_team_a_file_count": 5285,
+    "discovered_team_b_file_count": 4709,
+    "published_report_count": 10075,
+    "published_team_a_report_count": 5438,
+    "published_team_b_report_count": 4637,
+    "local_minus_published_report_count": -81,
+    "successful_file_count": 9994,
+    "failed_file_count": 0,
+    "missing_checkpoint_record_count": 0,
+    "files_with_saturated_speed": 91,
+    "total_saturated_speed_points": 503151,
+    "files_excluded_saturation_plateau": 90,
+    "files_flagged_spatial_extent": 105,
+    "files_excluded_by_qc": 90,
+    "daily_player_date_count": 9994,
+    "daily_player_date_with_usable_gps_count": 9904,
+    "gps_player_count": 75
+  },
+  "outputs": {
+    "file_audit": "source_gps_file_audit.csv",
+    "daily_features": "source_gps_daily.csv",
+    "report": "source_gps_aggregation_audit.md"
+  },
+  "software": {
+    "python": "3.13.13 | packaged by Anaconda, Inc. | (main, Apr 14 2026, 06:14:06) [Clang 20.1.8 ]",
+    "platform": "macOS-26.0.1-arm64-arm-64bit-Mach-O",
+    "pandas": "3.0.3",
+    "numpy": "2.4.6"
+  },
+  "references": {
+    "soccermon_data_paper_and_hsrd_definition": "https://doi.org/10.1038/s41597-024-03386-x",
+    "ifab_field_dimensions": "https://www.theifab.com/laws/latest/the-field-of-play/"
+  }
+}

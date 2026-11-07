@@ -1,0 +1,15 @@
+metric,value
+raw_rows,162
+exact_duplicate_rows_involved,11
+exact_duplicates_removed,6
+clean_raw_rows,156
+unique_player_report_days,156
+players_with_reports,15
+date_min,2020-01-14
+date_max,2021-11-03
+body_location_entries,299
+unique_body_locations,11
+minor_location_entries,224
+major_location_entries,75
+other_severity_entries,0
+multi_location_report_days,67

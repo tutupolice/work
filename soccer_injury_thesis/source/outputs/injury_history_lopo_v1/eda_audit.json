@@ -1,0 +1,17 @@
+{
+  "source_snapshot": "/Users/zhanghongtu/pmsys/md-mohaiminul-islam-emon/outputs/injury_history_lopo_v1/merged_source_snapshot.parquet",
+  "analysis_file": "/Users/zhanghongtu/pmsys/md-mohaiminul-islam-emon/outputs/injury_history_lopo_v1/history_8d.parquet",
+  "analysis": "EDA uses original injury_report_t as same-day injury label; no t+1 shift",
+  "source_sha256": "7cd352920c16ab2446b50e29418f2f6cf02319dcfc64791c9e9110b2c973bfe9",
+  "analysis_sha256": "66c5138f6db44b9b4ce714e24c580db8068935310d715df8484c810efcc06fd8",
+  "rows": 19613,
+  "players": 50,
+  "positive_days": 149,
+  "positive_rate": 0.00759700198847703,
+  "positive_players": 13,
+  "figures": [
+    "fig3_1_outcome_distribution",
+    "fig3_2_positive_days_by_athlete",
+    "fig3_3_monthly_positive_days"
+  ]
+}

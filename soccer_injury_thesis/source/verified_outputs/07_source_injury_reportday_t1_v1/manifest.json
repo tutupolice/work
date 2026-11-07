@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-08-10T22:59:06.667767+08:00",
+  "script": "verified_07_source_injury_reportday_t1.py",
+  "input_path": "/Users/zhanghongtu/pmsys/md-mohaiminul-islam-emon/data/subjective/injury/injury.csv",
+  "input_sha256": "f10075e247f62ac2a4a4c5681d3cbf6883dd5ab8bdc37a6bbbfc7cee48599e78",
+  "timestamp_format": "%d.%m.%Y",
+  "analysis_unit": "player-calendar-day",
+  "daily_label": "injury_report",
+  "daily_label_definition": "1 when at least one cleaned raw injury report exists for player_name and date",
+  "across_day_merging": false,
+  "location_or_severity_in_daily_label_file": false,
+  "counts": {
+    "raw_rows": 162,
+    "exact_duplicate_rows_involved": 11,
+    "exact_duplicates_removed": 6,
+    "clean_raw_rows": 156,
+    "unique_player_report_days": 156,
+    "players_with_reports": 15,
+    "date_min": "2020-01-14",
+    "date_max": "2021-11-03",
+    "body_location_entries": 299,
+    "unique_body_locations": 11,
+    "minor_location_entries": 224,
+    "major_location_entries": 75,
+    "other_severity_entries": 0,
+    "multi_location_report_days": 67
+  },
+  "software": {
+    "python": "3.13.13 | packaged by Anaconda, Inc. | (main, Apr 14 2026, 06:14:06) [Clang 20.1.8 ]",
+    "platform": "macOS-26.0.1-arm64-arm-64bit-Mach-O",
+    "pandas": "3.0.3",
+    "numpy": "2.4.6"
+  }
+}

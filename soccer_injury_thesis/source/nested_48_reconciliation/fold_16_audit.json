@@ -1,0 +1,22 @@
+{
+  "fold": 16,
+  "original_inner_candidate_count": 48,
+  "candidate_count": 48,
+  "source_selection_file": "/Users/zhanghongtu/pmsys/md-mohaiminul-islam-emon/outputs/injury_history_lopo_v1/nested_joint_selection/outer_fold_16_selection.json",
+  "source_sha256": "f99d9737bc36052b04804b07811bad2b3fbf5f1dcb1059c780f2be816a7f3c42",
+  "selected": {
+    "id": 43,
+    "window": 32,
+    "model": "RandomForest",
+    "strategy": "control",
+    "params": {
+      "n_estimators": 200,
+      "max_depth": 8,
+      "min_samples_leaf": 5
+    }
+  },
+  "inner_check_max_AP_difference": 0.0,
+  "inner_check_max_AUC_difference": 0.0,
+  "changed_selection": false,
+  "warnings": []
+}

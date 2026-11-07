@@ -1,0 +1,12 @@
+raw_row_number,player_name,type,timestamp,date,exact_duplicate_group_size,is_exact_duplicate_removed,duplicate_audit_status
+3,TeamA-5cd7a61b-88b2-46d2-94f8-5a0d4f682d93,"{""right_foot"":""minor""}",21.03.2020,2020-03-21,2,0,retained_first_exact_row
+4,TeamA-5cd7a61b-88b2-46d2-94f8-5a0d4f682d93,"{""right_foot"":""minor""}",21.03.2020,2020-03-21,2,1,removed_exact_duplicate
+48,TeamA-74afe68c-f348-414c-9754-6d6f9df12587,"{""left_thigh"":""minor""}",22.03.2020,2020-03-22,2,0,retained_first_exact_row
+49,TeamA-74afe68c-f348-414c-9754-6d6f9df12587,"{""left_thigh"":""minor""}",22.03.2020,2020-03-22,2,1,removed_exact_duplicate
+70,TeamA-3e5f6e2b-46b7-4890-84a9-3bbb2649af5a,"{""right_thigh"":""minor""}",21.03.2020,2020-03-21,2,0,retained_first_exact_row
+71,TeamA-3e5f6e2b-46b7-4890-84a9-3bbb2649af5a,"{""right_thigh"":""minor""}",21.03.2020,2020-03-21,2,1,removed_exact_duplicate
+115,TeamA-4051bba7-1170-4c43-b912-8c38815a7625,"{""left_knee"":""minor"",""right_knee"":""major""}",05.05.2020,2020-05-05,2,0,retained_first_exact_row
+116,TeamA-4051bba7-1170-4c43-b912-8c38815a7625,"{""left_knee"":""minor"",""right_knee"":""major""}",05.05.2020,2020-05-05,2,1,removed_exact_duplicate
+154,TeamB-4405bb1f-56f7-48ba-bfa8-e795e4006952,"{""left_thigh"":""minor""}",26.01.2020,2020-01-26,3,0,retained_first_exact_row
+155,TeamB-4405bb1f-56f7-48ba-bfa8-e795e4006952,"{""left_thigh"":""minor""}",26.01.2020,2020-01-26,3,1,removed_exact_duplicate
+156,TeamB-4405bb1f-56f7-48ba-bfa8-e795e4006952,"{""left_thigh"":""minor""}",26.01.2020,2020-01-26,3,1,removed_exact_duplicate

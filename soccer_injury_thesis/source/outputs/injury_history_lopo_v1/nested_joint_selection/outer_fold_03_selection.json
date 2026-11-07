@@ -1,0 +1,1950 @@
+{
+  "fold": 3,
+  "test_player": "TeamA-358603ef-b3a3-46b5-b80a-ad64e06b6592",
+  "selected_configuration": {
+    "id": 70,
+    "window": 21,
+    "model": "RandomForest",
+    "strategy": "control",
+    "params": {
+      "n_estimators": 200,
+      "max_depth": 8,
+      "min_samples_leaf": 5
+    }
+  },
+  "selected_inner_result": {
+    "candidate_id": 70,
+    "window": 21,
+    "model": "RandomForest",
+    "strategy": "control",
+    "inner_AP_mean": 0.07017155206074006,
+    "inner_ROC_AUC_mean": 0.718792827997134,
+    "inner_AP_folds": [
+      0.031032250623511306,
+      0.09959531728583944,
+      0.07988708827286949
+    ],
+    "inner_ROC_AUC_folds": [
+      0.7516290090547517,
+      0.6160496354502936,
+      0.7886998394863564
+    ],
+    "warnings": []
+  },
+  "inner_candidate_results": [
+    {
+      "candidate_id": 0,
+      "window": 2,
+      "model": "LogisticRegression",
+      "strategy": "control",
+      "inner_AP_mean": 0.01628570772078716,
+      "inner_ROC_AUC_mean": 0.6486929775005871,
+      "inner_AP_folds": [
+        0.021855621549154707,
+        0.007689921989007413,
+        0.01931157962419936
+      ],
+      "inner_ROC_AUC_folds": [
+        0.6170688139048018,
+        0.6529534037761996,
+        0.6760567148207597
+      ],
+      "warnings": [
+        "'n_jobs' has no effect since 1.8 and will be removed in 1.10. You provided 'n_jobs=2', please leave it unspecified.",
+        "'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio set to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None."
+      ]
+    },
+    {
+      "candidate_id": 1,
+      "window": 2,
+      "model": "LogisticRegression",
+      "strategy": "ros01",
+      "inner_AP_mean": 0.0159906491068302,
+      "inner_ROC_AUC_mean": 0.6505973075311949,
+      "inner_AP_folds": [
+        0.02064680787195669,
+        0.008592523543412639,
+        0.01873261590512127
+      ],
+      "inner_ROC_AUC_folds": [
+        0.6159392695122354,
+        0.6590161094751429,
+        0.6768365436062066
+      ],
+      "warnings": [
+        "'n_jobs' has no effect since 1.8 and will be removed in 1.10. You provided 'n_jobs=2', please leave it unspecified.",
+        "'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio set to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None."
+      ]
+    },
+    {
+      "candidate_id": 2,
+      "window": 2,
+      "model": "GaussianNB",
+      "strategy": "control",
+      "inner_AP_mean": 0.022145910181806935,
+      "inner_ROC_AUC_mean": 0.6871790990761725,
+      "inner_AP_folds": [
+        0.023519192361098826,
+        0.006470125458583621,
+        0.03644841272573836
+      ],
+      "inner_ROC_AUC_folds": [
+        0.6291313914000096,
+        0.6439695762404926,
+        0.7884363295880149
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 3,
+      "window": 2,
+      "model": "GaussianNB",
+      "strategy": "ros01",
+      "inner_AP_mean": 0.021923302265865318,
+      "inner_ROC_AUC_mean": 0.6813176255454233,
+      "inner_AP_folds": [
+        0.023070726653948936,
+        0.006833992023518356,
+        0.035865188120128656
+      ],
+      "inner_ROC_AUC_folds": [
+        0.6279153835115953,
+        0.6382218162921437,
+        0.7778156768325307
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 4,
+      "window": 2,
+      "model": "SVM-RBF",
+      "strategy": "control",
+      "inner_AP_mean": 0.012073893648498214,
+      "inner_ROC_AUC_mean": 0.6105368377473305,
+      "inner_AP_folds": [
+        0.019160161142858775,
+        0.003948076080314496,
+        0.013113443722321368
+      ],
+      "inner_ROC_AUC_folds": [
+        0.6569505612768634,
+        0.6082862226981403,
+        0.5663737292669877
+      ],
+      "warnings": [
+        "The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`"
+      ]
+    },
+    {
+      "candidate_id": 5,
+      "window": 2,
+      "model": "SVM-RBF",
+      "strategy": "ros01",
+      "inner_AP_mean": 0.012985955289169,
+      "inner_ROC_AUC_mean": 0.6132962055295677,
+      "inner_AP_folds": [
+        0.02089250921959424,
+        0.0037945790085460772,
+        0.014270777639366683
+      ],
+      "inner_ROC_AUC_folds": [
+        0.6752311518777296,
+        0.5811221517093681,
+        0.5835353130016051
+      ],
+      "warnings": [
+        "The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`"
+      ]
+    },
+    {
+      "candidate_id": 6,
+      "window": 2,
+      "model": "RandomForest",
+      "strategy": "control",
+      "inner_AP_mean": 0.020663477314934686,
+      "inner_ROC_AUC_mean": 0.697313998778383,
+      "inner_AP_folds": [
+        0.025974469290165482,
+        0.007705441391748042,
+        0.028310521262890527
+      ],
+      "inner_ROC_AUC_folds": [
+        0.7338331659252882,
+        0.6681101680235579,
+        0.6899986623863029
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 7,
+      "window": 2,
+      "model": "RandomForest",
+      "strategy": "ros01",
+      "inner_AP_mean": 0.021838166837508218,
+      "inner_ROC_AUC_mean": 0.7130025540604339,
+      "inner_AP_folds": [
+        0.025508013344364,
+        0.007086139749850787,
+        0.03292034741830986
+      ],
+      "inner_ROC_AUC_folds": [
+        0.7151552111732913,
+        0.7008802733729116,
+        0.7229721776350989
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 8,
+      "window": 2,
+      "model": "XGBoost",
+      "strategy": "control",
+      "inner_AP_mean": 0.03387173693140585,
+      "inner_ROC_AUC_mean": 0.7243319722085749,
+      "inner_AP_folds": [
+        0.03756056298443916,
+        0.0066829310939173275,
+        0.05737171671586106
+      ],
+      "inner_ROC_AUC_folds": [
+        0.7442005070072224,
+        0.6641418515660678,
+        0.7646535580524345
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 9,
+      "window": 2,
+      "model": "XGBoost",
+      "strategy": "ros01",
+      "inner_AP_mean": 0.023427279134415464,
+      "inner_ROC_AUC_mean": 0.67806723824653,
+      "inner_AP_folds": [
+        0.02668180540592196,
+        0.004145299783074575,
+        0.03945473221424985
+      ],
+      "inner_ROC_AUC_folds": [
+        0.6828095853063567,
+        0.6021920224241374,
+        0.7492001070090959
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 10,
+      "window": 2,
+      "model": "LightGBM",
+      "strategy": "control",
+      "inner_AP_mean": 0.03158453949346998,
+      "inner_ROC_AUC_mean": 0.7002453866784958,
+      "inner_AP_folds": [
+        0.03144518199648255,
+        0.009470218144438977,
+        0.05383821833948842
+      ],
+      "inner_ROC_AUC_folds": [
+        0.6873654756780027,
+        0.6451978646678109,
+        0.7681728196896735
+      ],
+      "warnings": [
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+      ]
+    },
+    {
+      "candidate_id": 11,
+      "window": 2,
+      "model": "LightGBM",
+      "strategy": "ros01",
+      "inner_AP_mean": 0.02538106382374396,
+      "inner_ROC_AUC_mean": 0.670510484349415,
+      "inner_AP_folds": [
+        0.027756144237241855,
+        0.004342707491970691,
+        0.04404433974201934
+      ],
+      "inner_ROC_AUC_folds": [
+        0.6739001659363262,
+        0.5934365305576115,
+        0.7441947565543071
+      ],
+      "warnings": [
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+      ]
+    },
+    {
+      "candidate_id": 12,
+      "window": 2,
+      "model": "CatBoost",
+      "strategy": "control",
+      "inner_AP_mean": 0.038956012947155005,
+      "inner_ROC_AUC_mean": 0.7360931645244495,
+      "inner_AP_folds": [
+        0.031173842202773396,
+        0.007010965860073367,
+        0.07868323077861825
+      ],
+      "inner_ROC_AUC_folds": [
+        0.7207771780522534,
+        0.6742358628726202,
+        0.813266452648475
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 13,
+      "window": 2,
+      "model": "CatBoost",
+      "strategy": "ros01",
+      "inner_AP_mean": 0.02840274119752047,
+      "inner_ROC_AUC_mean": 0.717966710154759,
+      "inner_AP_folds": [
+        0.030482544745727896,
+        0.004647852211414347,
+        0.050077826635419175
+      ],
+      "inner_ROC_AUC_folds": [
+        0.7203540588172529,
+        0.6629922995763978,
+        0.770553772070626
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 14,
+      "window": 2,
+      "model": "MLP",
+      "strategy": "control",
+      "inner_AP_mean": 0.010562647796654235,
+      "inner_ROC_AUC_mean": 0.5788964771226451,
+      "inner_AP_folds": [
+        0.017320222698268942,
+        0.0028091030533487706,
+        0.011558617638344992
+      ],
+      "inner_ROC_AUC_folds": [
+        0.640086500288825,
+        0.561973450073225,
+        0.5346294810058855
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 15,
+      "window": 2,
+      "model": "MLP",
+      "strategy": "ros01",
+      "inner_AP_mean": 0.011331058010044632,
+      "inner_ROC_AUC_mean": 0.5819247641876039,
+      "inner_AP_folds": [
+        0.020109227955773502,
+        0.0032999049472983793,
+        0.010584041127062018
+      ],
+      "inner_ROC_AUC_folds": [
+        0.6446598673245251,
+        0.5821457253988,
+        0.5189686998394863
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 16,
+      "window": 4,
+      "model": "LogisticRegression",
+      "strategy": "control",
+      "inner_AP_mean": 0.023431370511838866,
+      "inner_ROC_AUC_mean": 0.6845059057017845,
+      "inner_AP_folds": [
+        0.03757861219527718,
+        0.00517404918894558,
+        0.02754145015129384
+      ],
+      "inner_ROC_AUC_folds": [
+        0.6817867405469645,
+        0.6789915437065965,
+        0.6927394328517925
+      ],
+      "warnings": [
+        "'n_jobs' has no effect since 1.8 and will be removed in 1.10. You provided 'n_jobs=2', please leave it unspecified.",
+        "'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio set to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None."
+      ]
+    },
+    {
+      "candidate_id": 17,
+      "window": 4,
+      "model": "LogisticRegression",
+      "strategy": "ros01",
+      "inner_AP_mean": 0.020425177786449172,
+      "inner_ROC_AUC_mean": 0.6791149451951556,
+      "inner_AP_folds": [
+        0.02769796247445201,
+        0.005578353177971192,
+        0.02799921770692432
+      ],
+      "inner_ROC_AUC_folds": [
+        0.6898048500502224,
+        0.6668818795962395,
+        0.6806581059390048
+      ],
+      "warnings": [
+        "'n_jobs' has no effect since 1.8 and will be removed in 1.10. You provided 'n_jobs=2', please leave it unspecified.",
+        "'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio set to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None."
+      ]
+    },
+    {
+      "candidate_id": 18,
+      "window": 4,
+      "model": "GaussianNB",
+      "strategy": "control",
+      "inner_AP_mean": 0.02881119161063936,
+      "inner_ROC_AUC_mean": 0.7142853298871841,
+      "inner_AP_folds": [
+        0.034471731671094345,
+        0.017725168495434217,
+        0.03423667466538951
+      ],
+      "inner_ROC_AUC_folds": [
+        0.6700231059895287,
+        0.7012424609860951,
+        0.7715904226859284
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 19,
+      "window": 4,
+      "model": "GaussianNB",
+      "strategy": "ros01",
+      "inner_AP_mean": 0.027206759058789415,
+      "inner_ROC_AUC_mean": 0.710799838523586,
+      "inner_AP_folds": [
+        0.03453268391578723,
+        0.018329877294328327,
+        0.028757715966252685
+      ],
+      "inner_ROC_AUC_folds": [
+        0.6713522522820844,
+        0.6941719288852495,
+        0.7668753344034243
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 20,
+      "window": 4,
+      "model": "SVM-RBF",
+      "strategy": "control",
+      "inner_AP_mean": 0.02043317984437146,
+      "inner_ROC_AUC_mean": 0.6080534169231745,
+      "inner_AP_folds": [
+        0.03071891130934934,
+        0.018145230742401604,
+        0.012435397481363445
+      ],
+      "inner_ROC_AUC_folds": [
+        0.6763496583772091,
+        0.5665559107443744,
+        0.58125468164794
+      ],
+      "warnings": [
+        "The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`"
+      ]
+    },
+    {
+      "candidate_id": 21,
+      "window": 4,
+      "model": "SVM-RBF",
+      "strategy": "ros01",
+      "inner_AP_mean": 0.020862766156137278,
+      "inner_ROC_AUC_mean": 0.6362609080299664,
+      "inner_AP_folds": [
+        0.042794971852817075,
+        0.0030296848954540012,
+        0.01676364172014076
+      ],
+      "inner_ROC_AUC_folds": [
+        0.7344236932054408,
+        0.6123017810182196,
+        0.5620572498662386
+      ],
+      "warnings": [
+        "The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`"
+      ]
+    },
+    {
+      "candidate_id": 22,
+      "window": 4,
+      "model": "RandomForest",
+      "strategy": "control",
+      "inner_AP_mean": 0.02763542165227126,
+      "inner_ROC_AUC_mean": 0.7156163158067396,
+      "inner_AP_folds": [
+        0.026581917058237477,
+        0.006609807000573642,
+        0.04971454089800267
+      ],
+      "inner_ROC_AUC_folds": [
+        0.714281377970573,
+        0.6450876336551029,
+        0.7874799357945426
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 23,
+      "window": 4,
+      "model": "RandomForest",
+      "strategy": "ros01",
+      "inner_AP_mean": 0.02764435927223696,
+      "inner_ROC_AUC_mean": 0.7305101875030743,
+      "inner_AP_folds": [
+        0.027922290775868018,
+        0.006245252148052333,
+        0.04876553489279052
+      ],
+      "inner_ROC_AUC_folds": [
+        0.7422238043202313,
+        0.6608664157598854,
+        0.7884403424291064
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 24,
+      "window": 4,
+      "model": "XGBoost",
+      "strategy": "control",
+      "inner_AP_mean": 0.03278784142807394,
+      "inner_ROC_AUC_mean": 0.7418737877810293,
+      "inner_AP_folds": [
+        0.036667028748463844,
+        0.005840603053789695,
+        0.055855892481968275
+      ],
+      "inner_ROC_AUC_folds": [
+        0.7562787215176368,
+        0.710407382328394,
+        0.7589352594970573
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 25,
+      "window": 4,
+      "model": "XGBoost",
+      "strategy": "ros01",
+      "inner_AP_mean": 0.028803673380382377,
+      "inner_ROC_AUC_mean": 0.7211008757401137,
+      "inner_AP_folds": [
+        0.027625089256814866,
+        0.006358701922227625,
+        0.05242722896210463
+      ],
+      "inner_ROC_AUC_folds": [
+        0.6838416283099882,
+        0.7020613199376406,
+        0.7773996789727126
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 26,
+      "window": 4,
+      "model": "LightGBM",
+      "strategy": "control",
+      "inner_AP_mean": 0.033461800808380716,
+      "inner_ROC_AUC_mean": 0.7309154050373267,
+      "inner_AP_folds": [
+        0.03384067075842639,
+        0.007163939244920018,
+        0.05938079242179574
+      ],
+      "inner_ROC_AUC_folds": [
+        0.6913014043879304,
+        0.7260916807079981,
+        0.7753531300160513
+      ],
+      "warnings": [
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+      ]
+    },
+    {
+      "candidate_id": 27,
+      "window": 4,
+      "model": "LightGBM",
+      "strategy": "ros01",
+      "inner_AP_mean": 0.03532164221409701,
+      "inner_ROC_AUC_mean": 0.7201715259610127,
+      "inner_AP_folds": [
+        0.029723858760375033,
+        0.005560803051418163,
+        0.07068026483049783
+      ],
+      "inner_ROC_AUC_folds": [
+        0.6803104223465826,
+        0.7170527376659369,
+        0.763151417870519
+      ],
+      "warnings": [
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+      ]
+    },
+    {
+      "candidate_id": 28,
+      "window": 4,
+      "model": "CatBoost",
+      "strategy": "control",
+      "inner_AP_mean": 0.028771019644286983,
+      "inner_ROC_AUC_mean": 0.7466657935916231,
+      "inner_AP_folds": [
+        0.036642331346133795,
+        0.007985918201682131,
+        0.04168480938504502
+      ],
+      "inner_ROC_AUC_folds": [
+        0.7399242432604465,
+        0.702502243988473,
+        0.7975708935259497
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 29,
+      "window": 4,
+      "model": "CatBoost",
+      "strategy": "ros01",
+      "inner_AP_mean": 0.024168617076721733,
+      "inner_ROC_AUC_mean": 0.7442100006758778,
+      "inner_AP_folds": [
+        0.029937110752309593,
+        0.0051073494972617445,
+        0.037461390980593874
+      ],
+      "inner_ROC_AUC_folds": [
+        0.7569152400189851,
+        0.6904713163157646,
+        0.7852434456928838
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 30,
+      "window": 4,
+      "model": "MLP",
+      "strategy": "control",
+      "inner_AP_mean": 0.01803443922981793,
+      "inner_ROC_AUC_mean": 0.6004770339627427,
+      "inner_AP_folds": [
+        0.03848810307578556,
+        0.003897988537926205,
+        0.011717226075742038
+      ],
+      "inner_ROC_AUC_folds": [
+        0.641635484618696,
+        0.5912161630159205,
+        0.5685794542536116
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 31,
+      "window": 4,
+      "model": "MLP",
+      "strategy": "ros01",
+      "inner_AP_mean": 0.013387631173358899,
+      "inner_ROC_AUC_mean": 0.5761548918112724,
+      "inner_AP_folds": [
+        0.02658470000319229,
+        0.0037738727626550907,
+        0.009804320754229313
+      ],
+      "inner_ROC_AUC_folds": [
+        0.6395769175579766,
+        0.5749177204226572,
+        0.5139700374531835
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 32,
+      "window": 8,
+      "model": "LogisticRegression",
+      "strategy": "control",
+      "inner_AP_mean": 0.027840333120811262,
+      "inner_ROC_AUC_mean": 0.7143069033665116,
+      "inner_AP_folds": [
+        0.04276098376181026,
+        0.003974108754343452,
+        0.03678590684628008
+      ],
+      "inner_ROC_AUC_folds": [
+        0.706006637453043,
+        0.6865502417208635,
+        0.7503638309256286
+      ],
+      "warnings": [
+        "'n_jobs' has no effect since 1.8 and will be removed in 1.10. You provided 'n_jobs=2', please leave it unspecified.",
+        "'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio set to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None."
+      ]
+    },
+    {
+      "candidate_id": 33,
+      "window": 8,
+      "model": "LogisticRegression",
+      "strategy": "ros01",
+      "inner_AP_mean": 0.02788322705458769,
+      "inner_ROC_AUC_mean": 0.7040119628590314,
+      "inner_AP_folds": [
+        0.04268468950196899,
+        0.004712882703554011,
+        0.03625210895824007
+      ],
+      "inner_ROC_AUC_folds": [
+        0.7065750889470217,
+        0.7030691463395431,
+        0.7023916532905297
+      ],
+      "warnings": [
+        "'n_jobs' has no effect since 1.8 and will be removed in 1.10. You provided 'n_jobs=2', please leave it unspecified.",
+        "'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio set to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None."
+      ]
+    },
+    {
+      "candidate_id": 34,
+      "window": 8,
+      "model": "GaussianNB",
+      "strategy": "control",
+      "inner_AP_mean": 0.03418959469099003,
+      "inner_ROC_AUC_mean": 0.7396814007855549,
+      "inner_AP_folds": [
+        0.04498281228700153,
+        0.022104568660198342,
+        0.035481403125770215
+      ],
+      "inner_ROC_AUC_folds": [
+        0.6835656809828139,
+        0.7358864935514857,
+        0.7995920278223649
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 35,
+      "window": 8,
+      "model": "GaussianNB",
+      "strategy": "ros01",
+      "inner_AP_mean": 0.03304882015425326,
+      "inner_ROC_AUC_mean": 0.7363914103461372,
+      "inner_AP_folds": [
+        0.044378301930100575,
+        0.02162542008449895,
+        0.03314273844816025
+      ],
+      "inner_ROC_AUC_folds": [
+        0.681683720211486,
+        0.7281860699494511,
+        0.7993044408774745
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 36,
+      "window": 8,
+      "model": "SVM-RBF",
+      "strategy": "control",
+      "inner_AP_mean": 0.05119438347399958,
+      "inner_ROC_AUC_mean": 0.6470813933499413,
+      "inner_AP_folds": [
+        0.044537488539241075,
+        0.09477096024840044,
+        0.014274701634357241
+      ],
+      "inner_ROC_AUC_folds": [
+        0.7339509034515492,
+        0.6106640631151284,
+        0.5966292134831461
+      ],
+      "warnings": [
+        "The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`"
+      ]
+    },
+    {
+      "candidate_id": 37,
+      "window": 8,
+      "model": "SVM-RBF",
+      "strategy": "ros01",
+      "inner_AP_mean": 0.021445395119508492,
+      "inner_ROC_AUC_mean": 0.6550885978530824,
+      "inner_AP_folds": [
+        0.043287438240342986,
+        0.004973634811519472,
+        0.016075112306663024
+      ],
+      "inner_ROC_AUC_folds": [
+        0.7623900349901211,
+        0.5691384658992489,
+        0.633737292669877
+      ],
+      "warnings": [
+        "The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`"
+      ]
+    },
+    {
+      "candidate_id": 38,
+      "window": 8,
+      "model": "RandomForest",
+      "strategy": "control",
+      "inner_AP_mean": 0.04204482034617288,
+      "inner_ROC_AUC_mean": 0.7310524954615311,
+      "inner_AP_folds": [
+        0.027216105082856205,
+        0.05250830516915834,
+        0.04641005078650409
+      ],
+      "inner_ROC_AUC_folds": [
+        0.7221569146881244,
+        0.6674960238098987,
+        0.8035045478865703
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 39,
+      "window": 8,
+      "model": "RandomForest",
+      "strategy": "ros01",
+      "inner_AP_mean": 0.037972986771112854,
+      "inner_ROC_AUC_mean": 0.7452625219092944,
+      "inner_AP_folds": [
+        0.03357131441515832,
+        0.01262890213219219,
+        0.06771874376598805
+      ],
+      "inner_ROC_AUC_folds": [
+        0.7494057934221516,
+        0.6586303009306647,
+        0.8277514713750669
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 40,
+      "window": 8,
+      "model": "XGBoost",
+      "strategy": "control",
+      "inner_AP_mean": 0.04341350835654962,
+      "inner_ROC_AUC_mean": 0.7654160187056558,
+      "inner_AP_folds": [
+        0.052545302924426454,
+        0.004630859889826722,
+        0.07306436225539568
+      ],
+      "inner_ROC_AUC_folds": [
+        0.7634754278103395,
+        0.6756846133253547,
+        0.8570880149812733
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 41,
+      "window": 8,
+      "model": "XGBoost",
+      "strategy": "ros01",
+      "inner_AP_mean": 0.04584534423380435,
+      "inner_ROC_AUC_mean": 0.7459129065219136,
+      "inner_AP_folds": [
+        0.04087012586637418,
+        0.0038436375461566585,
+        0.09282226928888221
+      ],
+      "inner_ROC_AUC_folds": [
+        0.7161385034824553,
+        0.6354030518243232,
+        0.886197164258962
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 42,
+      "window": 8,
+      "model": "LightGBM",
+      "strategy": "control",
+      "inner_AP_mean": 0.03950139796669908,
+      "inner_ROC_AUC_mean": 0.7533076674812861,
+      "inner_AP_folds": [
+        0.03452617103866065,
+        0.005229063210439895,
+        0.07874895965099671
+      ],
+      "inner_ROC_AUC_folds": [
+        0.7338745580243642,
+        0.6626616065382738,
+        0.86338683788122
+      ],
+      "warnings": [
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+      ]
+    },
+    {
+      "candidate_id": 43,
+      "window": 8,
+      "model": "LightGBM",
+      "strategy": "ros01",
+      "inner_AP_mean": 0.0435884612555296,
+      "inner_ROC_AUC_mean": 0.7402973446467583,
+      "inner_AP_folds": [
+        0.03801921017862955,
+        0.003683021823798388,
+        0.08906315176416088
+      ],
+      "inner_ROC_AUC_folds": [
+        0.7064334359857389,
+        0.6304898981150497,
+        0.8839686998394863
+      ],
+      "warnings": [
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+      ]
+    },
+    {
+      "candidate_id": 44,
+      "window": 8,
+      "model": "CatBoost",
+      "strategy": "control",
+      "inner_AP_mean": 0.033254834905495835,
+      "inner_ROC_AUC_mean": 0.7296603727692624,
+      "inner_AP_folds": [
+        0.03739822884573863,
+        0.008695672742528549,
+        0.05367060312822033
+      ],
+      "inner_ROC_AUC_folds": [
+        0.7190681442726212,
+        0.6406941404343102,
+        0.829218833600856
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 45,
+      "window": 8,
+      "model": "CatBoost",
+      "strategy": "ros01",
+      "inner_AP_mean": 0.029213355275924835,
+      "inner_ROC_AUC_mean": 0.7414333236137982,
+      "inner_AP_folds": [
+        0.034851905740345496,
+        0.005206807233039266,
+        0.04758135285438975
+      ],
+      "inner_ROC_AUC_folds": [
+        0.774588746500068,
+        0.6175456277656174,
+        0.832165596575709
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 46,
+      "window": 8,
+      "model": "MLP",
+      "strategy": "control",
+      "inner_AP_mean": 0.015115179652876556,
+      "inner_ROC_AUC_mean": 0.6079883219952364,
+      "inner_AP_folds": [
+        0.029059446490638158,
+        0.002962598441819967,
+        0.013323494026171542
+      ],
+      "inner_ROC_AUC_folds": [
+        0.6692688499619193,
+        0.6109160197156039,
+        0.5437800963081862
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 47,
+      "window": 8,
+      "model": "MLP",
+      "strategy": "ros01",
+      "inner_AP_mean": 0.014437687424999934,
+      "inner_ROC_AUC_mean": 0.6031764081100582,
+      "inner_AP_folds": [
+        0.028992083629650132,
+        0.003989056558178074,
+        0.0103319220871716
+      ],
+      "inner_ROC_AUC_folds": [
+        0.661477937091368,
+        0.6606302064469395,
+        0.4874210807918673
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 48,
+      "window": 16,
+      "model": "LogisticRegression",
+      "strategy": "control",
+      "inner_AP_mean": 0.030530233480012516,
+      "inner_ROC_AUC_mean": 0.6729899020254294,
+      "inner_AP_folds": [
+        0.040612082866631365,
+        0.002989903465179224,
+        0.04798871410822696
+      ],
+      "inner_ROC_AUC_folds": [
+        0.7337733773377337,
+        0.5966489772136749,
+        0.6885473515248797
+      ],
+      "warnings": [
+        "'n_jobs' has no effect since 1.8 and will be removed in 1.10. You provided 'n_jobs=2', please leave it unspecified.",
+        "'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio set to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None."
+      ]
+    },
+    {
+      "candidate_id": 49,
+      "window": 16,
+      "model": "LogisticRegression",
+      "strategy": "ros01",
+      "inner_AP_mean": 0.029831712036342616,
+      "inner_ROC_AUC_mean": 0.6632601687432433,
+      "inner_AP_folds": [
+        0.03120803744297053,
+        0.0037645007594859915,
+        0.054522597906571324
+      ],
+      "inner_ROC_AUC_folds": [
+        0.7173802664547391,
+        0.6594334125946806,
+        0.6129668271803104
+      ],
+      "warnings": [
+        "'n_jobs' has no effect since 1.8 and will be removed in 1.10. You provided 'n_jobs=2', please leave it unspecified.",
+        "'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio set to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None."
+      ]
+    },
+    {
+      "candidate_id": 50,
+      "window": 16,
+      "model": "GaussianNB",
+      "strategy": "control",
+      "inner_AP_mean": 0.03546237470460253,
+      "inner_ROC_AUC_mean": 0.7090533642347568,
+      "inner_AP_folds": [
+        0.05064293694831727,
+        0.018198458038476195,
+        0.037545729127014114
+      ],
+      "inner_ROC_AUC_folds": [
+        0.6701776364927462,
+        0.664236335291246,
+        0.7927461209202782
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 51,
+      "window": 16,
+      "model": "GaussianNB",
+      "strategy": "ros01",
+      "inner_AP_mean": 0.03299561561304983,
+      "inner_ROC_AUC_mean": 0.7087108976984672,
+      "inner_AP_folds": [
+        0.04836981239599922,
+        0.015656173693703396,
+        0.03496086074944689
+      ],
+      "inner_ROC_AUC_folds": [
+        0.6702273070116376,
+        0.6614805599735446,
+        0.7944248261102194
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 52,
+      "window": 16,
+      "model": "SVM-RBF",
+      "strategy": "control",
+      "inner_AP_mean": 0.04758814092691447,
+      "inner_ROC_AUC_mean": 0.6203904199900382,
+      "inner_AP_folds": [
+        0.031349093447679256,
+        0.09387919394129146,
+        0.017536135391772713
+      ],
+      "inner_ROC_AUC_folds": [
+        0.699804261362591,
+        0.5415649654347039,
+        0.6198020331728197
+      ],
+      "warnings": [
+        "The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`"
+      ]
+    },
+    {
+      "candidate_id": 53,
+      "window": 16,
+      "model": "SVM-RBF",
+      "strategy": "ros01",
+      "inner_AP_mean": 0.017082010422181416,
+      "inner_ROC_AUC_mean": 0.5873185689666142,
+      "inner_AP_folds": [
+        0.028289123211923617,
+        0.008570632933382432,
+        0.014386275121238195
+      ],
+      "inner_ROC_AUC_folds": [
+        0.7190359504177841,
+        0.5218336141599609,
+        0.5210861423220974
+      ],
+      "warnings": [
+        "The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`"
+      ]
+    },
+    {
+      "candidate_id": 54,
+      "window": 16,
+      "model": "RandomForest",
+      "strategy": "control",
+      "inner_AP_mean": 0.06866680702997392,
+      "inner_ROC_AUC_mean": 0.7174477796704141,
+      "inner_AP_folds": [
+        0.029192249966084792,
+        0.10730198692600626,
+        0.0695061841978307
+      ],
+      "inner_ROC_AUC_folds": [
+        0.7253385873704428,
+        0.6032313434010991,
+        0.8237734082397004
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 55,
+      "window": 16,
+      "model": "RandomForest",
+      "strategy": "ros01",
+      "inner_AP_mean": 0.04486308143257778,
+      "inner_ROC_AUC_mean": 0.6922294060711098,
+      "inner_AP_folds": [
+        0.0309588772858197,
+        0.022834837498642922,
+        0.08079552951327072
+      ],
+      "inner_ROC_AUC_folds": [
+        0.7126045380457777,
+        0.583059068075524,
+        0.7810246120920278
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 56,
+      "window": 16,
+      "model": "XGBoost",
+      "strategy": "control",
+      "inner_AP_mean": 0.04829116176899989,
+      "inner_ROC_AUC_mean": 0.7598154262723451,
+      "inner_AP_folds": [
+        0.06563620180118648,
+        0.003868410857060945,
+        0.07536887264875226
+      ],
+      "inner_ROC_AUC_folds": [
+        0.8125811745054103,
+        0.6137190368958947,
+        0.8531460674157303
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 57,
+      "window": 16,
+      "model": "XGBoost",
+      "strategy": "ros01",
+      "inner_AP_mean": 0.04184046599332181,
+      "inner_ROC_AUC_mean": 0.7129453999799636,
+      "inner_AP_folds": [
+        0.049150244851040054,
+        0.004362687047367769,
+        0.07200846608155759
+      ],
+      "inner_ROC_AUC_folds": [
+        0.7099416463385468,
+        0.629844259326331,
+        0.7990502942750133
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 58,
+      "window": 16,
+      "model": "LightGBM",
+      "strategy": "control",
+      "inner_AP_mean": 0.044004570648882246,
+      "inner_ROC_AUC_mean": 0.7227163240113299,
+      "inner_AP_folds": [
+        0.051024784441468,
+        0.0035232803075610037,
+        0.07746564719761775
+      ],
+      "inner_ROC_AUC_folds": [
+        0.7089123628081873,
+        0.6187109270428168,
+        0.8405256821829856
+      ],
+      "warnings": [
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+      ]
+    },
+    {
+      "candidate_id": 59,
+      "window": 16,
+      "model": "LightGBM",
+      "strategy": "ros01",
+      "inner_AP_mean": 0.04553969978131298,
+      "inner_ROC_AUC_mean": 0.7168482453393689,
+      "inner_AP_folds": [
+        0.04704119915673167,
+        0.004216332071529937,
+        0.08536156811567734
+      ],
+      "inner_ROC_AUC_folds": [
+        0.7035829000960296,
+        0.6401587326582996,
+        0.8068031032637774
+      ],
+      "warnings": [
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+      ]
+    },
+    {
+      "candidate_id": 60,
+      "window": 16,
+      "model": "CatBoost",
+      "strategy": "control",
+      "inner_AP_mean": 0.042149214455746896,
+      "inner_ROC_AUC_mean": 0.7075403042960376,
+      "inner_AP_folds": [
+        0.03361728562131233,
+        0.008249884576874849,
+        0.08458047316905351
+      ],
+      "inner_ROC_AUC_folds": [
+        0.6791450048014833,
+        0.6239547737902146,
+        0.8195211342964153
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 61,
+      "window": 16,
+      "model": "CatBoost",
+      "strategy": "ros01",
+      "inner_AP_mean": 0.05018248905098843,
+      "inner_ROC_AUC_mean": 0.7295960919138776,
+      "inner_AP_folds": [
+        0.047059158100942036,
+        0.008152506665741561,
+        0.09533580238628168
+      ],
+      "inner_ROC_AUC_folds": [
+        0.7210522055550036,
+        0.6273561878966348,
+        0.8403798822899946
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 62,
+      "window": 16,
+      "model": "MLP",
+      "strategy": "control",
+      "inner_AP_mean": 0.017096654485253205,
+      "inner_ROC_AUC_mean": 0.5480417240607258,
+      "inner_AP_folds": [
+        0.03236621661290936,
+        0.0025346446259396057,
+        0.016389102216910645
+      ],
+      "inner_ROC_AUC_folds": [
+        0.5642883686361948,
+        0.5860353054186417,
+        0.4938014981273408
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 63,
+      "window": 16,
+      "model": "MLP",
+      "strategy": "ros01",
+      "inner_AP_mean": 0.017250642999804184,
+      "inner_ROC_AUC_mean": 0.5803221542829541,
+      "inner_AP_folds": [
+        0.03312033891871121,
+        0.0032691440665329075,
+        0.015362446014168443
+      ],
+      "inner_ROC_AUC_folds": [
+        0.6058257999713014,
+        0.6297340283136229,
+        0.505406634563938
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 64,
+      "window": 21,
+      "model": "LogisticRegression",
+      "strategy": "control",
+      "inner_AP_mean": 0.03573781620948626,
+      "inner_ROC_AUC_mean": 0.6659513705980586,
+      "inner_AP_folds": [
+        0.04162431653613122,
+        0.0029001517731064366,
+        0.06268898031922113
+      ],
+      "inner_ROC_AUC_folds": [
+        0.7303037996107302,
+        0.5909799537029747,
+        0.6765703584804709
+      ],
+      "warnings": [
+        "'n_jobs' has no effect since 1.8 and will be removed in 1.10. You provided 'n_jobs=2', please leave it unspecified.",
+        "'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio set to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None."
+      ]
+    },
+    {
+      "candidate_id": 65,
+      "window": 21,
+      "model": "LogisticRegression",
+      "strategy": "ros01",
+      "inner_AP_mean": 0.03049263567653103,
+      "inner_ROC_AUC_mean": 0.6394804414269536,
+      "inner_AP_folds": [
+        0.028658879820102137,
+        0.0034478741347470127,
+        0.059371153074743936
+      ],
+      "inner_ROC_AUC_folds": [
+        0.7104337524053409,
+        0.621608427948286,
+        0.5863991439272338
+      ],
+      "warnings": [
+        "'n_jobs' has no effect since 1.8 and will be removed in 1.10. You provided 'n_jobs=2', please leave it unspecified.",
+        "'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio set to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None."
+      ]
+    },
+    {
+      "candidate_id": 66,
+      "window": 21,
+      "model": "GaussianNB",
+      "strategy": "control",
+      "inner_AP_mean": 0.036741017191839996,
+      "inner_ROC_AUC_mean": 0.7242244760323948,
+      "inner_AP_folds": [
+        0.05436841742995316,
+        0.015226635315364006,
+        0.04062799883020283
+      ],
+      "inner_ROC_AUC_folds": [
+        0.6742892516676418,
+        0.6853691951561344,
+        0.8130149812734082
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 67,
+      "window": 21,
+      "model": "GaussianNB",
+      "strategy": "ros01",
+      "inner_AP_mean": 0.03404557649050688,
+      "inner_ROC_AUC_mean": 0.7243198458972806,
+      "inner_AP_folds": [
+        0.05104878668277367,
+        0.012495586220442667,
+        0.0385923565683043
+      ],
+      "inner_ROC_AUC_folds": [
+        0.674936808062077,
+        0.6826134198384327,
+        0.8154093097913322
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 68,
+      "window": 21,
+      "model": "SVM-RBF",
+      "strategy": "control",
+      "inner_AP_mean": 0.026437214158475816,
+      "inner_ROC_AUC_mean": 0.6185785293364177,
+      "inner_AP_folds": [
+        0.03421035651772548,
+        0.03348684953732182,
+        0.011614436420380153
+      ],
+      "inner_ROC_AUC_folds": [
+        0.7341505053515385,
+        0.5692014550493678,
+        0.5523836276083467
+      ],
+      "warnings": [
+        "The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`"
+      ]
+    },
+    {
+      "candidate_id": 69,
+      "window": 21,
+      "model": "SVM-RBF",
+      "strategy": "ros01",
+      "inner_AP_mean": 0.014991091633013062,
+      "inner_ROC_AUC_mean": 0.5912205078100482,
+      "inner_AP_folds": [
+        0.027060302863252148,
+        0.005674523526122797,
+        0.012238448509664242
+      ],
+      "inner_ROC_AUC_folds": [
+        0.7084027800773389,
+        0.4986536069162087,
+        0.5666051364365972
+      ],
+      "warnings": [
+        "The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`"
+      ]
+    },
+    {
+      "candidate_id": 70,
+      "window": 21,
+      "model": "RandomForest",
+      "strategy": "control",
+      "inner_AP_mean": 0.07017155206074006,
+      "inner_ROC_AUC_mean": 0.718792827997134,
+      "inner_AP_folds": [
+        0.031032250623511306,
+        0.09959531728583944,
+        0.07988708827286949
+      ],
+      "inner_ROC_AUC_folds": [
+        0.7516290090547517,
+        0.6160496354502936,
+        0.7886998394863564
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 71,
+      "window": 21,
+      "model": "RandomForest",
+      "strategy": "ros01",
+      "inner_AP_mean": 0.041835206354519476,
+      "inner_ROC_AUC_mean": 0.6927367128346077,
+      "inner_AP_folds": [
+        0.037349465968802356,
+        0.01630200260864068,
+        0.07185415048611539
+      ],
+      "inner_ROC_AUC_folds": [
+        0.7246993093958225,
+        0.567422011558509,
+        0.7860888175494918
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 72,
+      "window": 21,
+      "model": "XGBoost",
+      "strategy": "control",
+      "inner_AP_mean": 0.04546476248875497,
+      "inner_ROC_AUC_mean": 0.7175734802510094,
+      "inner_AP_folds": [
+        0.05271473174746946,
+        0.006648044148579304,
+        0.07703151157021615
+      ],
+      "inner_ROC_AUC_folds": [
+        0.7383964148923254,
+        0.6608034266097664,
+        0.7535205992509363
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 73,
+      "window": 21,
+      "model": "XGBoost",
+      "strategy": "ros01",
+      "inner_AP_mean": 0.05231254487679721,
+      "inner_ROC_AUC_mean": 0.6882304476079701,
+      "inner_AP_folds": [
+        0.04025480441356169,
+        0.006110459599165662,
+        0.11057237061766427
+      ],
+      "inner_ROC_AUC_folds": [
+        0.6805633740631588,
+        0.5710675086216399,
+        0.8130604601391118
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 74,
+      "window": 21,
+      "model": "LightGBM",
+      "strategy": "control",
+      "inner_AP_mean": 0.05344505876335284,
+      "inner_ROC_AUC_mean": 0.6964411678601037,
+      "inner_AP_folds": [
+        0.0473417255366331,
+        0.004179465815033518,
+        0.10881398493839191
+      ],
+      "inner_ROC_AUC_folds": [
+        0.7088442958008175,
+        0.5632962222257216,
+        0.817182985553772
+      ],
+      "warnings": [
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+      ]
+    },
+    {
+      "candidate_id": 75,
+      "window": 21,
+      "model": "LightGBM",
+      "strategy": "ros01",
+      "inner_AP_mean": 0.048984913949599834,
+      "inner_ROC_AUC_mean": 0.6932375059681094,
+      "inner_AP_folds": [
+        0.05550675951474379,
+        0.004858665208653615,
+        0.0865893171254021
+      ],
+      "inner_ROC_AUC_folds": [
+        0.7192005989896648,
+        0.5437302174700408,
+        0.8167817014446228
+      ],
+      "warnings": [
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+      ]
+    },
+    {
+      "candidate_id": 76,
+      "window": 21,
+      "model": "CatBoost",
+      "strategy": "control",
+      "inner_AP_mean": 0.044286828615183856,
+      "inner_ROC_AUC_mean": 0.7290322128084911,
+      "inner_AP_folds": [
+        0.04089932611683779,
+        0.007703582318971228,
+        0.08425757740974256
+      ],
+      "inner_ROC_AUC_folds": [
+        0.7332067654926028,
+        0.6166480323764232,
+        0.8372418405564473
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 77,
+      "window": 21,
+      "model": "CatBoost",
+      "strategy": "ros01",
+      "inner_AP_mean": 0.04601545459839009,
+      "inner_ROC_AUC_mean": 0.7346365496451441,
+      "inner_AP_folds": [
+        0.049757065798695606,
+        0.02592751378273148,
+        0.06236178421374317
+      ],
+      "inner_ROC_AUC_folds": [
+        0.7431049961183409,
+        0.6456387887186432,
+        0.8151658640984484
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 78,
+      "window": 21,
+      "model": "MLP",
+      "strategy": "control",
+      "inner_AP_mean": 0.011974062165974774,
+      "inner_ROC_AUC_mean": 0.5700041731629648,
+      "inner_AP_folds": [
+        0.02029062850877679,
+        0.002742218777323161,
+        0.01288933921182437
+      ],
+      "inner_ROC_AUC_folds": [
+        0.5573602510752746,
+        0.5923499677180606,
+        0.5603023006955591
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 79,
+      "window": 21,
+      "model": "MLP",
+      "strategy": "ros01",
+      "inner_AP_mean": 0.0121899152501641,
+      "inner_ROC_AUC_mean": 0.5776376417519334,
+      "inner_AP_folds": [
+        0.020139464044824855,
+        0.003596559707270796,
+        0.01283372199839665
+      ],
+      "inner_ROC_AUC_folds": [
+        0.5304443487827043,
+        0.6341432688219454,
+        0.5683253076511504
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 80,
+      "window": 32,
+      "model": "LogisticRegression",
+      "strategy": "control",
+      "inner_AP_mean": 0.03706255957318313,
+      "inner_ROC_AUC_mean": 0.6821777310249226,
+      "inner_AP_folds": [
+        0.0438776191488298,
+        0.0033586444370579966,
+        0.06395141513366158
+      ],
+      "inner_ROC_AUC_folds": [
+        0.7778642412736257,
+        0.5976095617529881,
+        0.6710593900481542
+      ],
+      "warnings": [
+        "'n_jobs' has no effect since 1.8 and will be removed in 1.10. You provided 'n_jobs=2', please leave it unspecified.",
+        "'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio set to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None."
+      ]
+    },
+    {
+      "candidate_id": 81,
+      "window": 32,
+      "model": "LogisticRegression",
+      "strategy": "ros01",
+      "inner_AP_mean": 0.032100200690717395,
+      "inner_ROC_AUC_mean": 0.6590739463355485,
+      "inner_AP_folds": [
+        0.03692035078492568,
+        0.003953273544688219,
+        0.05542697774253828
+      ],
+      "inner_ROC_AUC_folds": [
+        0.7768193207280594,
+        0.619498291419303,
+        0.580904226859283
+      ],
+      "warnings": [
+        "'n_jobs' has no effect since 1.8 and will be removed in 1.10. You provided 'n_jobs=2', please leave it unspecified.",
+        "'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio set to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None."
+      ]
+    },
+    {
+      "candidate_id": 82,
+      "window": 32,
+      "model": "GaussianNB",
+      "strategy": "control",
+      "inner_AP_mean": 0.035742620851458455,
+      "inner_ROC_AUC_mean": 0.7409316053017436,
+      "inner_AP_folds": [
+        0.05549763720823546,
+        0.009527065224681075,
+        0.042203160121458826
+      ],
+      "inner_ROC_AUC_folds": [
+        0.6838020758597599,
+        0.7221548588255673,
+        0.8168378812199036
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 83,
+      "window": 32,
+      "model": "GaussianNB",
+      "strategy": "ros01",
+      "inner_AP_mean": 0.034909034012839596,
+      "inner_ROC_AUC_mean": 0.7411043538695393,
+      "inner_AP_folds": [
+        0.05418162164997147,
+        0.008683033829964642,
+        0.041862446558582685
+      ],
+      "inner_ROC_AUC_folds": [
+        0.6845774878491194,
+        0.7178086074673637,
+        0.8209269662921348
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 84,
+      "window": 32,
+      "model": "SVM-RBF",
+      "strategy": "control",
+      "inner_AP_mean": 0.02532715154083665,
+      "inner_ROC_AUC_mean": 0.6005650665597062,
+      "inner_AP_folds": [
+        0.0422019719997673,
+        0.020975546210464276,
+        0.012803936412278385
+      ],
+      "inner_ROC_AUC_folds": [
+        0.648540606569018,
+        0.6074831110341243,
+        0.5456714820759764
+      ],
+      "warnings": [
+        "The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`"
+      ]
+    },
+    {
+      "candidate_id": 85,
+      "window": 32,
+      "model": "SVM-RBF",
+      "strategy": "ros01",
+      "inner_AP_mean": 0.018641627923949047,
+      "inner_ROC_AUC_mean": 0.6059667781409382,
+      "inner_AP_folds": [
+        0.034081236203007806,
+        0.009407862073843204,
+        0.012435785494996134
+      ],
+      "inner_ROC_AUC_folds": [
+        0.7516750002759474,
+        0.5673275278333307,
+        0.4988978063135366
+      ],
+      "warnings": [
+        "The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`"
+      ]
+    },
+    {
+      "candidate_id": 86,
+      "window": 32,
+      "model": "RandomForest",
+      "strategy": "control",
+      "inner_AP_mean": 0.04665642188299348,
+      "inner_ROC_AUC_mean": 0.6774136520570101,
+      "inner_AP_folds": [
+        0.032585078567342156,
+        0.04275442548273593,
+        0.06462976159890237
+      ],
+      "inner_ROC_AUC_folds": [
+        0.7362661015265406,
+        0.5372817032266193,
+        0.7586931514178705
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 87,
+      "window": 32,
+      "model": "RandomForest",
+      "strategy": "ros01",
+      "inner_AP_mean": 0.04182030320874305,
+      "inner_ROC_AUC_mean": 0.7185488745392804,
+      "inner_AP_folds": [
+        0.041204640776137426,
+        0.021621481338136534,
+        0.06263478751195517
+      ],
+      "inner_ROC_AUC_folds": [
+        0.7856137620451009,
+        0.6041446860778231,
+        0.7658881754949172
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 88,
+      "window": 32,
+      "model": "XGBoost",
+      "strategy": "control",
+      "inner_AP_mean": 0.04834473458222629,
+      "inner_ROC_AUC_mean": 0.7101055365683407,
+      "inner_AP_folds": [
+        0.058170064056806546,
+        0.006128071983874897,
+        0.08073606770599741
+      ],
+      "inner_ROC_AUC_folds": [
+        0.7803459275693456,
+        0.651906209155473,
+        0.6980644729802034
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 89,
+      "window": 32,
+      "model": "XGBoost",
+      "strategy": "ros01",
+      "inner_AP_mean": 0.03305294569350828,
+      "inner_ROC_AUC_mean": 0.6952129784298023,
+      "inner_AP_folds": [
+        0.04376905998719813,
+        0.0033296867070828724,
+        0.05206009038624384
+      ],
+      "inner_ROC_AUC_folds": [
+        0.7802281900430846,
+        0.5635166842511378,
+        0.7418940609951845
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 90,
+      "window": 32,
+      "model": "LightGBM",
+      "strategy": "control",
+      "inner_AP_mean": 0.056547554327924854,
+      "inner_ROC_AUC_mean": 0.7050286308044557,
+      "inner_AP_folds": [
+        0.04906204701710265,
+        0.003375792109540774,
+        0.11720482385713114
+      ],
+      "inner_ROC_AUC_folds": [
+        0.7450531842481908,
+        0.5849644898666204,
+        0.7850682182985553
+      ],
+      "warnings": [
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+      ]
+    },
+    {
+      "candidate_id": 91,
+      "window": 32,
+      "model": "LightGBM",
+      "strategy": "ros01",
+      "inner_AP_mean": 0.04512237162081812,
+      "inner_ROC_AUC_mean": 0.7239299544081911,
+      "inner_AP_folds": [
+        0.04254899547579469,
+        0.004783083680972197,
+        0.08803503570568748
+      ],
+      "inner_ROC_AUC_folds": [
+        0.7807957217126396,
+        0.6124120120309277,
+        0.7785821294810058
+      ],
+      "warnings": [
+        "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+      ]
+    },
+    {
+      "candidate_id": 92,
+      "window": 32,
+      "model": "CatBoost",
+      "strategy": "control",
+      "inner_AP_mean": 0.047631780697354464,
+      "inner_ROC_AUC_mean": 0.6750088695564287,
+      "inner_AP_folds": [
+        0.0331709002947342,
+        0.00890091394166151,
+        0.10082352785566767
+      ],
+      "inner_ROC_AUC_folds": [
+        0.6232987847279712,
+        0.573169771506858,
+        0.8285580524344569
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 93,
+      "window": 32,
+      "model": "CatBoost",
+      "strategy": "ros01",
+      "inner_AP_mean": 0.03474779695754527,
+      "inner_ROC_AUC_mean": 0.6768458598065914,
+      "inner_AP_folds": [
+        0.03922874186507525,
+        0.007039936217572917,
+        0.05797471278998765
+      ],
+      "inner_ROC_AUC_folds": [
+        0.7178273011247612,
+        0.6559847566256711,
+        0.6567255216693418
+      ],
+      "warnings": []
+    },
+    {
+      "candidate_id": 94,
+      "window": 32,
+      "model": "MLP",
+      "strategy": "control",
+      "inner_AP_mean": 0.021521641141081547,
+      "inner_ROC_AUC_mean": 0.602708960850412,
+      "inner_AP_folds": [
+        0.05039480188437502,
+        0.0044008212252295495,
+        0.009769300313640072
+      ],
+      "inner_ROC_AUC_folds": [
+        0.5976448815450107,
+        0.6939357195723037,
+        0.5165462814339219
+      ],
+      "warnings": [
+        "Training interrupted by user."
+      ]
+    },
+    {
+      "candidate_id": 95,
+      "window": 32,
+      "model": "MLP",
+      "strategy": "ros01",
+      "inner_AP_mean": 0.014901926304152581,
+      "inner_ROC_AUC_mean": 0.532876047591131,
+      "inner_AP_folds": [
+        0.02765122181606179,
+        0.002797885438161803,
+        0.014256671658234151
+      ],
+      "inner_ROC_AUC_folds": [
+        0.5364544815685582,
+        0.6150575563359212,
+        0.4471161048689139
+      ],
+      "warnings": [
+        "Training interrupted by user."
+      ]
+    }
+  ],
+  "outer_warnings": [],
+  "selection_rule": "max mean inner AP; mean inner ROC-AUC tie-breaker"
+}

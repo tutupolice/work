@@ -1,0 +1,16 @@
+{
+  "source_rows": 19689,
+  "source_positive": 156,
+  "source_any_monitoring_days": 19689,
+  "source_positive_any_monitoring": 156,
+  "analysis_rows": 19613,
+  "analysis_positive": 149,
+  "analysis_positive_any_monitoring": 149,
+  "analysis_negative_any_monitoring": 19464,
+  "analysis_negative_no_monitoring": 0,
+  "flags": [
+    "has_training_record",
+    "has_wellness_record",
+    "has_gps_record"
+  ]
+}

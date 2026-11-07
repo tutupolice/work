@@ -1,0 +1,56 @@
+{
+  "model": "LightGBM",
+  "window": 8,
+  "selected_candidate": {
+    "id": 0,
+    "strategy": "control",
+    "params": {
+      "n_estimators": 180,
+      "max_depth": 3,
+      "num_leaves": 7,
+      "learning_rate": 0.04,
+      "min_child_samples": 40,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "reg_alpha": 0.0,
+      "reg_lambda": 1.0
+    }
+  },
+  "tuned_selected": false,
+  "benchmark_metrics": {
+    "AP": 0.0429729622986371,
+    "ROC_AUC": 0.7257375171371274
+  },
+  "tuned_metrics": {
+    "AP": 0.011807542366288143,
+    "ROC_AUC": 0.5710828733549047
+  },
+  "selected_metrics": {
+    "AP": 0.0429729622986371,
+    "ROC_AUC": 0.7257375171371274
+  },
+  "cluster_bootstrap": {
+    "valid_replicates": 1000,
+    "AP_95CI": [
+      0.01246248828966427,
+      0.14518371584255263
+    ],
+    "ROC_AUC_95CI": [
+      0.6464578095456187,
+      0.8241095931246373
+    ],
+    "note": "athlete-cluster bootstrap of fixed OOF predictions; does not rerun selection/training"
+  },
+  "rows": 19613,
+  "positives": 149,
+  "players": 50,
+  "AP_reference": 0.00759700198847703,
+  "full_training_search": [],
+  "final_warnings": [
+    "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+  ],
+  "outcome": "original day-level injury notification",
+  "features_timing": "strictly before outcome date; calendar history",
+  "calibration": "NOT calibrated; no reliable daily probability claim",
+  "selection_limit": "Development selection over benchmark configurations and tuning; not unbiased external performance."
+}

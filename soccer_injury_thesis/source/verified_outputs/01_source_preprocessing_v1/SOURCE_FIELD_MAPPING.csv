@@ -1,0 +1,66 @@
+panel_field,role,source_file,source_field,transformation,defines_prediction_origin,do_not_use_as_predictor
+has_game_record,availability_qc,derived source presence,has_game_record,binary source-row presence; not imputed,0,1
+has_gps_record,availability_qc,derived source presence,has_gps_record,binary source-row presence; not imputed,0,1
+has_illness_record,availability_qc,derived source presence,has_illness_record,binary source-row presence; not imputed,0,1
+has_training_record,availability_qc,derived source presence,has_training_record,binary source-row presence; not imputed,0,1
+has_wellness_record,availability_qc,derived source presence,has_wellness_record,binary source-row presence; not imputed,0,1
+origin_eligible,availability_qc,derived source presence,origin_eligible,binary source-row presence; not imputed,0,1
+calendar_year,cohort_qc,derived,date,calendar year,0,1
+pmsys_eligible,cohort_qc,real PmSys reports,player + year,subjective report presence,0,1
+distance_above_12p5_km_h_m,gps_predictor,verified_outputs/04_source_gps/source_gps_daily.csv,distance_above_12p5_km_h_m,verified daily GPS cache; missing retained as NA,1,0
+distance_above_15p0_km_h_m,gps_predictor,verified_outputs/04_source_gps/source_gps_daily.csv,distance_above_15p0_km_h_m,verified daily GPS cache; missing retained as NA,1,0
+distance_above_15p984_km_h_m,gps_predictor,verified_outputs/04_source_gps/source_gps_daily.csv,distance_above_15p984_km_h_m,verified daily GPS cache; missing retained as NA,1,0
+distance_above_19p98_km_h_m,gps_predictor,verified_outputs/04_source_gps/source_gps_daily.csv,distance_above_19p98_km_h_m,verified daily GPS cache; missing retained as NA,1,0
+total_distance_m,gps_predictor,verified_outputs/04_source_gps/source_gps_daily.csv,total_distance_m,verified daily GPS cache; missing retained as NA,1,0
+gps_average_speed_time_weighted_m_s,gps_qc,verified_outputs/04_source_gps/source_gps_daily.csv,gps_average_speed_time_weighted_m_s,verified daily GPS cache; missing retained as NA,1,1
+gps_file_count,gps_qc,verified_outputs/04_source_gps/source_gps_daily.csv,gps_file_count,verified daily GPS cache; missing retained as NA,1,1
+gps_heart_rate_mean_bpm,gps_qc,verified_outputs/04_source_gps/source_gps_daily.csv,gps_heart_rate_mean_bpm,verified daily GPS cache; missing retained as NA,1,1
+gps_invalid_speed_fraction,gps_qc,verified_outputs/04_source_gps/source_gps_daily.csv,gps_invalid_speed_fraction,verified daily GPS cache; missing retained as NA,1,1
+gps_invalid_speed_point_count,gps_qc,verified_outputs/04_source_gps/source_gps_daily.csv,gps_invalid_speed_point_count,verified daily GPS cache; missing retained as NA,1,1
+gps_max_speed_m_s,gps_qc,verified_outputs/04_source_gps/source_gps_daily.csv,gps_max_speed_m_s,verified daily GPS cache; missing retained as NA,1,1
+gps_qc_excluded_file_count,gps_qc,verified_outputs/04_source_gps/source_gps_daily.csv,gps_qc_excluded_file_count,verified daily GPS cache; missing retained as NA,1,1
+gps_qc_warning_file_count,gps_qc,verified_outputs/04_source_gps/source_gps_daily.csv,gps_qc_warning_file_count,verified daily GPS cache; missing retained as NA,1,1
+gps_raw_row_count,gps_qc,verified_outputs/04_source_gps/source_gps_daily.csv,gps_raw_row_count,verified daily GPS cache; missing retained as NA,1,1
+gps_saturated_speed_fraction,gps_qc,verified_outputs/04_source_gps/source_gps_daily.csv,gps_saturated_speed_fraction,verified daily GPS cache; missing retained as NA,1,1
+gps_saturated_speed_point_count,gps_qc,verified_outputs/04_source_gps/source_gps_daily.csv,gps_saturated_speed_point_count,verified daily GPS cache; missing retained as NA,1,1
+gps_unique_timestamp_count,gps_qc,verified_outputs/04_source_gps/source_gps_daily.csv,gps_unique_timestamp_count,verified daily GPS cache; missing retained as NA,1,1
+gps_usable,gps_qc,verified_outputs/04_source_gps/source_gps_daily.csv,gps_usable,verified daily GPS cache; missing retained as NA,1,1
+gps_usable_file_count,gps_qc,verified_outputs/04_source_gps/source_gps_daily.csv,gps_usable_file_count,verified daily GPS cache; missing retained as NA,1,1
+gps_valid_duration_s,gps_qc,verified_outputs/04_source_gps/source_gps_daily.csv,gps_valid_duration_s,verified daily GPS cache; missing retained as NA,1,1
+gps_valid_speed_point_count,gps_qc,verified_outputs/04_source_gps/source_gps_daily.csv,gps_valid_speed_point_count,verified daily GPS cache; missing retained as NA,1,1
+fatigue_burden,harmonized_predictor,data/subjective/wellness/*.csv,fatigue_burden,(5 - raw) / 4; no imputation,1,0
+poor_sleep_burden,harmonized_predictor,data/subjective/wellness/*.csv,poor_sleep_burden,(5 - raw) / 4; no imputation,1,0
+soreness_burden,harmonized_predictor,data/subjective/wellness/*.csv,soreness_burden,(5 - raw) / 4; no imputation,1,0
+stress_burden,harmonized_predictor,data/subjective/wellness/*.csv,stress_burden,(5 - raw) / 4; no imputation,1,0
+date,identifier,all sources,date/timestamp,source-specific parsing,0,1
+player_name,identifier,all sources,player_name,identity,0,1
+team,metadata,player_name,player_name prefix,Team prefix,0,1
+origin_eligibility_reason,origin_qc,derived source presence,source flags + injury_report_t,"monitoring_observed, injury_only, illness_only, or other_source_only",0,1
+y_t1,outcome,verified_outputs/07_source_injury_reportday_t1_v1/04_injury_report_day.csv,injury_report,exact player + target_date match,0,1
+injury_report_t,outcome_qc,verified_outputs/07_source_injury_reportday_t1_v1/04_injury_report_day.csv,injury_report,same-day exact player-date match,0,1
+monitoring_last_date,outcome_qc,panel + locked report days,date,per-player maximum observed date,0,1
+outcome_boundary_flag,outcome_qc,derived,target_date and monitoring_last_date,target beyond last observed date,0,1
+target_date,outcome_qc,derived,date,date + 1 calendar day,0,1
+defensive_performance,predictor,data/subjective/game-performance/game-performance.csv,defensive_performance,one daily game-performance record,1,0
+fatigue_raw,predictor,data/subjective/wellness/fatigue.csv,fatigue,wide-to-long; raw source scale preserved,1,0
+illness_record_count,predictor,data/subjective/illness/illness.csv,illness_record_count,daily record count,0,0
+mood_raw,predictor,data/subjective/wellness/mood.csv,mood,wide-to-long; raw source scale preserved,1,0
+offensive_performance,predictor,data/subjective/game-performance/game-performance.csv,offensive_performance,one daily game-performance record,1,0
+readiness_raw,predictor,data/subjective/wellness/readiness.csv,readiness,wide-to-long; raw source scale preserved,1,0
+session_count,predictor,data/subjective/training-load/session.json,session_count,session-level records aggregated by player-day; sums use min_count=1,1,0
+session_duration_sum_min,predictor,data/subjective/training-load/session.json,session_duration_sum_min,session-level records aggregated by player-day; sums use min_count=1,1,0
+session_rpe_mean,predictor,data/subjective/training-load/session.json,session_rpe_mean,session-level records aggregated by player-day; sums use min_count=1,1,0
+session_srpe_sum_au,predictor,data/subjective/training-load/session.json,session_srpe_sum_au,session-level records aggregated by player-day; sums use min_count=1,1,0
+sleep_duration_raw,predictor,data/subjective/wellness/sleep_duration.csv,sleep_duration,wide-to-long; raw source scale preserved,1,0
+sleep_quality_raw,predictor,data/subjective/wellness/sleep_quality.csv,sleep_quality,wide-to-long; raw source scale preserved,1,0
+soreness_raw,predictor,data/subjective/wellness/soreness.csv,soreness,wide-to-long; raw source scale preserved,1,0
+stress_raw,predictor,data/subjective/wellness/stress.csv,stress,wide-to-long; raw source scale preserved,1,0
+team_performance,predictor,data/subjective/game-performance/game-performance.csv,team_performance,one daily game-performance record,1,0
+acwr_exported,source_native_predictor,data/subjective/training-load/acwr.csv,acwr,wide-to-long; source value preserved; does not create origin,0,0
+atl_exported_au,source_native_predictor,data/subjective/training-load/atl.csv,atl,wide-to-long; source value preserved; does not create origin,0,0
+ctl28_exported_au,source_native_predictor,data/subjective/training-load/ctl28.csv,ctl28,wide-to-long; source value preserved; does not create origin,0,0
+ctl42_exported_au,source_native_predictor,data/subjective/training-load/ctl42.csv,ctl42,wide-to-long; source value preserved; does not create origin,0,0
+daily_load_au,source_native_predictor,data/subjective/training-load/daily_load.csv,daily_load,wide-to-long; source value preserved; does not create origin,0,0
+monotony_exported,source_native_predictor,data/subjective/training-load/monotony.csv,monotony,wide-to-long; source value preserved; does not create origin,0,0
+strain_exported_au,source_native_predictor,data/subjective/training-load/strain.csv,strain,wide-to-long; source value preserved; does not create origin,0,0
+weekly_load_au,source_native_predictor,data/subjective/training-load/weekly_load.csv,weekly_load,wide-to-long; source value preserved; does not create origin,0,0

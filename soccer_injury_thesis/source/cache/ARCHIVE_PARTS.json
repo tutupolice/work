@@ -1,0 +1,37 @@
+{
+  "archive": "source/cache/source_benchmark_folds.tar.gz",
+  "archive_sha256": "409644c0c5b4e9a69156e0217dda78b92343f13a0169deebc6e8bce632783169",
+  "archive_bytes": 25361122,
+  "parts": [
+    {
+      "path": "source/cache/source_benchmark_folds.tar.gz.part00",
+      "bytes": 5000000,
+      "sha256": "79deb41b77d0b5aa8b1b52babf388a402ec960e3b4b6151c0a8fe8cda02ba00c"
+    },
+    {
+      "path": "source/cache/source_benchmark_folds.tar.gz.part01",
+      "bytes": 5000000,
+      "sha256": "fe990a62f503322cb5092c25d455c5e7f9a1ac8607664ab25170428a7f028d71"
+    },
+    {
+      "path": "source/cache/source_benchmark_folds.tar.gz.part02",
+      "bytes": 5000000,
+      "sha256": "66e44ae898cc459201f78df64df5417e3f0994968500775d22c07b80fe5bf92e"
+    },
+    {
+      "path": "source/cache/source_benchmark_folds.tar.gz.part03",
+      "bytes": 5000000,
+      "sha256": "44e8454c0ad894fe4f86c1e0dee21ee5500a0a51307a44a526500efb07b27a7f"
+    },
+    {
+      "path": "source/cache/source_benchmark_folds.tar.gz.part04",
+      "bytes": 5000000,
+      "sha256": "225b6467e18d9ab93f6841161f8c4cc54a792c488648246f316c5501cb5413d6"
+    },
+    {
+      "path": "source/cache/source_benchmark_folds.tar.gz.part05",
+      "bytes": 361122,
+      "sha256": "7fcbd13412bcda36ae4afdf8fad08dacd71e01270492981f823536369e2419ba"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "source": "outputs/injury_history_lopo_v1/benchmark_summary.csv",
+  "calibration_source": "outputs/injury_history_lopo_v1/selected_model_calibrated_oof_predictions.csv",
+  "plots": [
+    "fig3_4_model_window_ap_comparison",
+    "fig3_5_precision_recall_selected_model",
+    "fig3_7_probability_calibration"
+  ],
+  "random_ap": 0.00759700198847703,
+  "best_configuration_by_AP": {
+    "configuration": "8d_LightGBM_control",
+    "rows": 19613,
+    "positives": 149,
+    "AP": 0.0429729622986371,
+    "ROC_AUC": 0.7257375171371274
+  },
+  "calibration_metrics": {
+    "model": "LightGBM",
+    "window_days": 8,
+    "rows": 19613,
+    "positives": 149,
+    "players": 50,
+    "metrics": [
+      {
+        "prediction": "raw",
+        "AP": 0.0429729622986371,
+        "ROC_AUC": 0.7257375171371274,
+        "Brier": 0.007634674094282743,
+        "LogLoss": 0.04469816148511353,
+        "mean_probability": 0.005682111857880421
+      },
+      {
+        "prediction": "calibrated",
+        "AP": 0.027962500214826675,
+        "ROC_AUC": 0.7073690682092151,
+        "Brier": 0.007520085881885647,
+        "LogLoss": 0.043011471495531195,
+        "mean_probability": 0.008747231273784005
+      }
+    ],
+    "calibration_intercept_mean": -1.7273129723951568,
+    "calibration_slope_mean": 0.5228099205666387,
+    "calibration_method": "Platt/logistic calibration fitted on 3 athlete-disjoint inner-fold OOF scores inside each outer training set",
+    "not_used_for_calibration": "outer test player",
+    "warning_count": 200,
+    "source_prediction_sha256": "b8ad507401e632a46f233712da7759b4f666469d4904a60a87bc439f123ec097"
+  },
+  "figure_input_sha256": {
+    "benchmark_summary.csv": "0e01017ce3340dc6dbb636d0d3c4cc3de072bcebc11bec31924f7ecb35a2ed16",
+    "selected_model_calibrated_oof_predictions.csv": "1b50706f018bff5501ef706e9aab4929df9b30736a78ce13954f078967615ee0",
+    "shap_global_feature_contributions.csv": "148cdf6288944a26a14a849788cdfc415a75f490e614312c0d1e8ac178dfe297"
+  },
+  "figure_boundary": "All numerical curves and marks are generated from actual LOPO predictions; no simulated points or manually edited values."
+}

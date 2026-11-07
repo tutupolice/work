@@ -1,0 +1,21 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+!.env.example
+
+# Local participant health data must not enter this PUBLIC repository.
+soccer_injury_thesis/local/*
+!soccer_injury_thesis/local/README.md
+!soccer_injury_thesis/local/数据处理方案/
+soccer_injury_thesis/local/数据处理方案/*
+!soccer_injury_thesis/local/数据处理方案/*.py
+
+# Original high-frequency public data are downloadable from SoccerMon.
+soccer_injury_thesis/source/data/2020/
+soccer_injury_thesis/source/data/2021/
+soccer_injury_thesis/source/outputs/injury_history_lopo_v1/folds/
+*.lock
+soccer_injury_thesis/source/cache/source_benchmark_folds.tar.gz

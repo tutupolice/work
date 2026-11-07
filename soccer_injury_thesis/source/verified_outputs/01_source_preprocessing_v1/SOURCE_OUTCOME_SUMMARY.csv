@@ -1,0 +1,15 @@
+metric,value
+raw_source_union_rows,21729.0
+raw_source_union_players,78.0
+raw_injury_only_rows,0.0
+raw_illness_only_rows,0.0
+raw_non_origin_rows,0.0
+prediction_origins,19689.0
+players,50.0
+y_t1_positive_non_boundary,137.0
+outcome_evaluable_rows,19639.0
+y_t1_prevalence_non_boundary,0.006975915270634961
+outcome_boundary_rows,50.0
+injury_report_days,156.0
+gps_record_coverage,0.40398191883792983
+duplicate_player_date_keys,0.0

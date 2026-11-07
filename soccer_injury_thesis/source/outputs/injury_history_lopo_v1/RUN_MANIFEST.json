@@ -1,0 +1,32 @@
+{
+  "completed_utc": "2026-10-07T09:16:54.996829+00:00",
+  "python": "3.13.13",
+  "versions": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.3",
+    "scikit-learn": "1.9.0",
+    "imbalanced-learn": "0.14.2",
+    "xgboost": "3.3.0",
+    "lightgbm": "4.6.0",
+    "catboost": "1.2.10",
+    "joblib": "1.5.3"
+  },
+  "input_and_code_sha256": {
+    "/Users/zhanghongtu/pmsys/md-mohaiminul-islam-emon/verified_outputs/01_source_preprocessing_v1/source_athlete_day_preprocessed.parquet": "7cd352920c16ab2446b50e29418f2f6cf02319dcfc64791c9e9110b2c973bfe9",
+    "/Users/zhanghongtu/pmsys/md-mohaiminul-islam-emon/config_soccermon.py": "1ddfdeacac382567e3ce4715523a4ad66d913646212d20d52b6bd990bfe01f68",
+    "/Users/zhanghongtu/pmsys/md-mohaiminul-islam-emon/03n_injury_history_lopo.py": "2299dc2425f8a81e9e22afd254bb48a6bc2b08de318e5fbcf5369947bd611c92",
+    "/Users/zhanghongtu/pmsys/md-mohaiminul-islam-emon/03o_injury_tuning_and_freeze.py": "a009c7edf4d84157aa1a47a7eb8973b93f6858a17d786d5ef7590ed43ed20344",
+    "/Users/zhanghongtu/pmsys/md-mohaiminul-islam-emon/outputs/injury_history_lopo_v1/history_2d.parquet": "ba496cb83317cd6cd224459ba768759588060289eb79ea6c92e3068d03606c03",
+    "/Users/zhanghongtu/pmsys/md-mohaiminul-islam-emon/outputs/injury_history_lopo_v1/history_4d.parquet": "d030a98f6a0f1d4144fc9b253565d7a0d9c5de56c77292d496c16c1b4bfe7ee9",
+    "/Users/zhanghongtu/pmsys/md-mohaiminul-islam-emon/outputs/injury_history_lopo_v1/history_8d.parquet": "66c5138f6db44b9b4ce714e24c580db8068935310d715df8484c810efcc06fd8",
+    "/Users/zhanghongtu/pmsys/md-mohaiminul-islam-emon/outputs/injury_history_lopo_v1/history_16d.parquet": "8e388e66346f424e214d2f06a0afbb2d4b57bf178fe7a535f713c7ea4323b6bc",
+    "/Users/zhanghongtu/pmsys/md-mohaiminul-islam-emon/outputs/injury_history_lopo_v1/history_21d.parquet": "eeca1a9a3f04f4613fd62462688c1886a66358bbcfc5bbf47d897aaa786c3895",
+    "/Users/zhanghongtu/pmsys/md-mohaiminul-islam-emon/outputs/injury_history_lopo_v1/history_32d.parquet": "3a582d76dd4319f3cfa86ca77f2df127281ecdd1fdf07212246f03d046a1c1c2"
+  },
+  "outcome": "original injury_report_t copied to injury; never shifted",
+  "benchmark_complete_configurations": 96,
+  "benchmark_complete_outer_fits": 4800,
+  "tuning_candidates": 16,
+  "tuning_complete_outer_folds": 50,
+  "model_sha256": "4e50edcc7415253ae302bdf0e1ce649a23a6e29da628427e6c1864d2f4c67cc3"
+}
